@@ -1,8 +1,5 @@
 //package codechicken.lib.inventory.container;
 //
-//import codechicken.lib.gui.GuiDraw;
-//import codechicken.lib.gui.GuiWidget;
-//import codechicken.lib.gui.IGuiActionListener;
 //import net.minecraft.client.Minecraft;
 //import net.minecraft.client.gui.inventory.GuiContainer;
 //import net.minecraft.client.renderer.GlStateManager;

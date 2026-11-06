@@ -1,13 +1,13 @@
 modLoader="javafml"
-loaderVersion="[2,)"
-issueTrackerURL="https://github.com/TheCBProject/CodeChickenLib"
+loaderVersion="${loader_version_range}"
 license="GNU Lesser General Public License v2.1"
+issueTrackerURL="https://github.com/TheCBProject/CodeChickenLib"
 
 [[mixins]]
 config="mixins.codechickenlib.json"
 
 [[mods]]
-	modId="codechickenlib"
+	modId="${mod_id}"
 	displayName="CodeChicken Lib"
 	version="${file.jarVersion}"
 
@@ -18,16 +18,15 @@ config="mixins.codechickenlib.json"
 CodeChickenLib is a library of systems to help make various aspects of minecraft modding easier.
 It contains libraries for 3D math and transformations, model rendering, packets, config, colours, asm and a few other things..
     '''
-[[dependencies.codechickenlib]]
+[[dependencies.${mod_id}]]
 	modId="neoforge"
 	type="required"
-	versionRange="[${forge_version},)"
+	versionRange="${neo_version_range}"
 	ordering="NONE"
 	side="BOTH"
-[[dependencies.codechickenlib]]
+[[dependencies.${mod_id}]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21.11]"
+    versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
-

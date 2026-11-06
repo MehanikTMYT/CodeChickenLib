@@ -2,7 +2,6 @@ package codechicken.lib.internal;
 
 import codechicken.lib.CodeChickenLib;
 import codechicken.lib.config.ConfigCategory;
-import codechicken.lib.gui.modular.lib.CursorHelper;
 import codechicken.lib.render.CCRenderEventHandler;
 import codechicken.lib.render.CCRenderPipelines;
 import net.covers1624.quack.util.CrashLock;

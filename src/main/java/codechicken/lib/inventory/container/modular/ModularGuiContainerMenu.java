@@ -1,10 +1,5 @@
 package codechicken.lib.inventory.container.modular;
 
-import codechicken.lib.gui.modular.elements.GuiSlots;
-import codechicken.lib.gui.modular.lib.container.ContainerScreenAccess;
-import codechicken.lib.gui.modular.lib.container.DataSync;
-import codechicken.lib.gui.modular.lib.container.SlotGroup;
-import codechicken.lib.gui.modular.lib.geometry.GuiParent;
 import codechicken.lib.internal.CCLNetwork;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;
@@ -167,7 +162,7 @@ public abstract class ModularGuiContainerMenu extends AbstractContainerMenu {
      */
     public static boolean canStacksMerge(ItemStack stack1, ItemStack stack2) {
         if (stack1.isEmpty() || stack2.isEmpty()) return false;
-        return ItemStack.matches(stack1, stack2);
+        return ItemStack.isSameItemSameComponents(stack1, stack2);
     }
 
     /**

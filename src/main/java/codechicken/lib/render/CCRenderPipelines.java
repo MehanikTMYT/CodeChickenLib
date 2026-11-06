@@ -20,13 +20,13 @@ public class CCRenderPipelines {
 
     public static final RenderPipeline POSITION_COLOR = RenderPipeline.builder(RenderPipelines.DEBUG_FILLED_SNIPPET)
             .withVertexFormat(DefaultVertexFormat.POSITION_COLOR, VertexFormat.Mode.QUADS)
-            .withDepthWrite(true) // Overwritten from DEBUG_FILLED_SNIPPET as we very much want depth here.
+            .withDepthStencilState(Optional.of(com.mojang.blaze3d.pipeline.DepthStencilState.DEFAULT))
             .withLocation(Identifier.fromNamespaceAndPath(MOD_ID, "pipeline/position_color"))
             .build();
 
     public static final RenderPipeline POSITION_COLOR_NO_DEPTH = RenderPipeline.builder(RenderPipelines.DEBUG_FILLED_SNIPPET)
             .withVertexFormat(DefaultVertexFormat.POSITION_COLOR, VertexFormat.Mode.QUADS)
-            .withDepthWrite(false)
+            .withDepthStencilState(Optional.empty())
             .withLocation(Identifier.fromNamespaceAndPath(MOD_ID, "pipeline/position_color_no_depth"))
             .build();
 }

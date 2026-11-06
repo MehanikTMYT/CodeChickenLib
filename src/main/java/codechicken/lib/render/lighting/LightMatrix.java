@@ -6,7 +6,7 @@ import codechicken.lib.render.pipeline.IVertexOperation;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.BlockAndTintGetter;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
 
@@ -23,7 +23,7 @@ public class LightMatrix implements IVertexOperation {
     public float[][] ao = new float[13][4];
     public int[][] brightness = new int[13][4];
 
-    public @Nullable BlockAndTintGetter access;
+    public @Nullable BlockGetter access;
     public BlockPos pos = BlockPos.ZERO;
 
     private int sampled = 0;
@@ -84,7 +84,7 @@ public class LightMatrix implements IVertexOperation {
         System.out.println(Arrays.deepToString(ssamplem));
     }*/
 
-    public void locate(BlockAndTintGetter a, BlockPos bPos) {
+    public void locate(BlockGetter a, BlockPos bPos) {
         access = a;
         pos = bPos;
         computed = 0;
@@ -117,7 +117,7 @@ public class LightMatrix implements IVertexOperation {
             int[] ssample = ssamplem[side];
             for (int q = 0; q < 4; q++) {
                 int[] qsample = qsamplem[q];
-                if (Minecraft.useAmbientOcclusion()) {
+                if (Minecraft.getInstance().options.ambientOcclusion().get()) {
                     interp(side, q, ssample[qsample[0]], ssample[qsample[1]], ssample[qsample[2]], ssample[qsample[3]]);
                 } else {
                     interp(side, q, ssample[4], ssample[4], ssample[4], ssample[4]);

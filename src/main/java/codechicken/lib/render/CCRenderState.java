@@ -16,16 +16,21 @@ import codechicken.lib.render.pipeline.attribute.*;
 import codechicken.lib.vec.Matrix4;
 import codechicken.lib.vec.Vector3;
 import codechicken.lib.vec.Vertex5;
-import com.mojang.blaze3d.vertex.*;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.BufferBuilder;
+import com.mojang.blaze3d.vertex.VertexFormat;
+import com.mojang.blaze3d.vertex.DefaultVertexFormat;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexFormatElement;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.block.model.BakedQuad;
+import net.minecraft.client.resources.model.geometry.BakedQuad;
 import net.minecraft.client.renderer.rendertype.RenderType;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.level.BlockAndTintGetter;
+import net.minecraft.world.level.BlockGetter;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.fluids.FluidStack;
 import org.jetbrains.annotations.Nullable;
@@ -192,7 +197,7 @@ public class CCRenderState {
         colour = baseColour = alphaOverride = -1;
     }
 
-    public void preRenderWorld(BlockAndTintGetter world, BlockPos pos) {
+    public void preRenderWorld(BlockGetter world, BlockPos pos) {
         this.reset();
         this.colour = 0xFFFFFFFF;
         this.setBrightness(world, pos);
@@ -277,7 +282,7 @@ public class CCRenderState {
         }
     }
 
-    public void setBrightness(BlockAndTintGetter world, BlockPos pos) {
+    public void setBrightness(BlockGetter world, BlockPos pos) {
         brightness = LevelRenderer.getLightColor(world, pos);
     }
 
