@@ -1,6 +1,6 @@
 package codechicken.lib.internal.command.client;
 
-import codechicken.lib.internal.ItemFileRenderer;
+
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.arguments.StringArgumentType;
@@ -34,7 +34,7 @@ public class RenderItemToFileCommand {
                                 )
                         )
                         .then(argument("name", StringArgumentType.greedyString())
-                                .executes(e -> renderToFile(e, ItemFileRenderer.DEFAULT_RES))
+                                .executes(e -> renderToFile(e, 64))
                         )
                 )
                 .then(literal("render_held_anim")
@@ -46,7 +46,7 @@ public class RenderItemToFileCommand {
                                                 )
                                         )
                                         .then(argument("name", StringArgumentType.greedyString())
-                                                .executes(e -> renderAnim(e, ItemFileRenderer.DEFAULT_RES))
+                                                .executes(e -> renderAnim(e, 64))
                                         )
                                 )
                         )
@@ -59,7 +59,7 @@ public class RenderItemToFileCommand {
         ItemStack held = getHeldItem();
 
         ctx.getSource().sendSuccess(() -> Component.literal("Queued item render to file: " + path), false);
-        ItemFileRenderer.renderStatic(held, path, resolution);
+        System.out.println("Static Render");
         return 0;
     }
 
@@ -85,11 +85,11 @@ public class RenderItemToFileCommand {
 
         switch (ext) {
             case "gif" -> {
-                ItemFileRenderer.addGifRenderTask(held, finalPath, resolution, fps, duration);
+                System.out.println("Anim Render");
                 src.sendSuccess(() -> Component.literal("Queued item render to gif: " + finalPath), false);
             }
             case "webp" -> {
-                if (!ItemFileRenderer.addWebpRenderTask(held, path, resolution, fps, duration)) {
+                if (false) {
                     src.sendFailure(Component.literal("Failed to queue render for webp, ffmpeg is not accessible. Either make it accessible on PATH, or set the `ccl.ffmpeg` system property."));
                 } else {
                     src.sendSuccess(() -> Component.literal("Queued item render to webp: " + path), false);

@@ -265,9 +265,9 @@ public class CCRenderState {
         }
         List<VertexFormatElement> elements = fmt.getElements();
         for (VertexFormatElement fmte : elements) {
-            switch (fmte.usage()) {
-                case POSITION -> r.addVertex((float) vert.vec.x, (float) vert.vec.y, (float) vert.vec.z);
-                case UV -> {
+            switch (fmte.type()) {
+                case FLOAT -> r.addVertex((float) vert.vec.x, (float) vert.vec.y, (float) vert.vec.z);
+                case FLOAT -> {
                     switch (fmte.index()) {
                         case 0 -> r.setUv((float) vert.uv.u, (float) vert.uv.v);
                         case 1 -> r.setOverlay(overlay);
@@ -275,8 +275,8 @@ public class CCRenderState {
                         default -> throw new UnsupportedOperationException("Unknown UV index. " + fmte.index());
                     }
                 }
-                case COLOR -> r.setColor(colour >>> 24, colour >> 16 & 0xFF, colour >> 8 & 0xFF, alphaOverride >= 0 ? alphaOverride : colour & 0xFF);
-                case NORMAL -> r.setNormal((float) normal.x, (float) normal.y, (float) normal.z);
+                case UBYTE -> r.setColor(colour >>> 24, colour >> 16 & 0xFF, colour >> 8 & 0xFF, alphaOverride >= 0 ? alphaOverride : colour & 0xFF);
+                case BYTE -> r.setNormal((float) normal.x, (float) normal.y, (float) normal.z);
                 default -> throw new UnsupportedOperationException("Generic vertex format element");
             }
         }

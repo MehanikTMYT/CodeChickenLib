@@ -63,9 +63,9 @@ public class ItemUtils {
      * @param velocity The velocity to add.
      */
     public static void dropItem(Level world, BlockPos pos, ItemStack stack, double velocity) {
-        double xVelocity = world.random.nextFloat() * velocity + (1.0D - velocity) * 0.5D;
-        double yVelocity = world.random.nextFloat() * velocity + (1.0D - velocity) * 0.5D;
-        double zVelocity = world.random.nextFloat() * velocity + (1.0D - velocity) * 0.5D;
+        double xVelocity = world.getRandom().nextFloat() * velocity + (1.0D - velocity) * 0.5D;
+        double yVelocity = world.getRandom().nextFloat() * velocity + (1.0D - velocity) * 0.5D;
+        double zVelocity = world.getRandom().nextFloat() * velocity + (1.0D - velocity) * 0.5D;
         ItemEntity entityItem = new ItemEntity(world, pos.getX() + xVelocity, pos.getY() + yVelocity, pos.getZ() + zVelocity, stack);
         entityItem.setPickUpDelay(10);
         world.addFreshEntity(entityItem);

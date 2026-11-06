@@ -1,7 +1,8 @@
 package codechicken.lib.model;
 
-import net.minecraft.client.renderer.block.model.BlockModelPart;
+import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.resources.Identifier;
+import net.minecraft.client.resources.model.geometry.BakedQuad;
 
 import java.util.List;
 import java.util.Map;
@@ -14,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public abstract class DynamicallyBakedModel<S> extends DynamicModel {
 
-    private final Map<S, List<BlockModelPart>> parts = new ConcurrentHashMap<>();
+    private final Map<S, List<BakedQuad>> parts = new ConcurrentHashMap<>();
 
     public DynamicallyBakedModel(Identifier identifier) {
         super(identifier);
@@ -26,7 +27,7 @@ public abstract class DynamicallyBakedModel<S> extends DynamicModel {
      * @param state  The model state.
      * @param output The parts to add to.
      */
-    public final void collect(S state, List<BlockModelPart> output) {
+    public final void collect(S state, List<BakedQuad> output) {
         output.addAll(parts.computeIfAbsent(state, this::bake));
     }
 
@@ -36,7 +37,7 @@ public abstract class DynamicallyBakedModel<S> extends DynamicModel {
      * @param state The state.
      * @return The baked parts.
      */
-    protected abstract List<BlockModelPart> bake(S state);
+    protected abstract List<BakedQuad> bake(S state);
 
     @Override
     protected void clear() {

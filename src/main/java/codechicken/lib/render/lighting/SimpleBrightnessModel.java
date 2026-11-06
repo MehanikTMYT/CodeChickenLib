@@ -5,7 +5,7 @@ import codechicken.lib.render.pipeline.IVertexOperation;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.level.BlockAndTintGetter;
+import net.minecraft.world.level.BlockGetter;
 import org.jetbrains.annotations.Nullable;
 
 import static java.util.Objects.requireNonNull;
@@ -18,13 +18,13 @@ public class SimpleBrightnessModel implements IVertexOperation {
     public static final int operationIndex = IVertexOperation.registerOperation();
     public static SimpleBrightnessModel instance = new SimpleBrightnessModel();
 
-    public @Nullable BlockAndTintGetter access;
+    public @Nullable BlockGetter access;
     public BlockPos pos = BlockPos.ZERO;
 
     private int sampled = 0;
     private final int[] samples = new int[6];
 
-    public void locate(BlockAndTintGetter a, BlockPos bPos) {
+    public void locate(BlockGetter a, BlockPos bPos) {
         access = a;
         pos = bPos;
         sampled = 0;

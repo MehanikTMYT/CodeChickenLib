@@ -236,12 +236,12 @@ public class Quad {
                     colors.color(i)
             );
         }
-        tintIndex = quad.tintIndex();
+        tintIndex = quad.materialInfo().tintIndex();
         direction = quad.direction();
-        sprite = quad.sprite();
-        shade = quad.shade();
-        lightEmission = quad.lightEmission();
-        ambientOcclusion = quad.hasAmbientOcclusion();
+        sprite = quad.materialInfo().sprite();
+        shade = quad.materialInfo().shade();
+        lightEmission = quad.materialInfo().lightEmission();
+        ambientOcclusion = quad.materialInfo().ambientOcclusion();
         return this;
     }
 
@@ -279,11 +279,8 @@ public class Quad {
                 vertices[1].packUV(),
                 vertices[2].packUV(),
                 vertices[3].packUV(),
-                tintIndex,
                 requireNonNull(direction, "Direction not computed."),
-                requireNonNull(sprite, "Quad requires a sprite."),
-                shade,
-                lightEmission,
+                new net.minecraft.client.resources.model.geometry.BakedQuad$MaterialInfo(requireNonNull(sprite, "Quad requires a sprite."), net.minecraft.client.renderer.chunk.ChunkSectionLayer.SOLID, net.minecraft.client.renderer.rendertype.RenderType.solid(), tintIndex, shade, lightEmission, ambientOcclusion),
                 BakedNormals.of(
                         vertices[0].packNormal(),
                         vertices[1].packNormal(),
@@ -295,8 +292,7 @@ public class Quad {
                         vertices[1].color,
                         vertices[2].color,
                         vertices[3].color
-                ),
-                ambientOcclusion
+                )
         );
     }
 
