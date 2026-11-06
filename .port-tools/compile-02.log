@@ -1,0 +1,1598 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/root/.gradle/wrapper/dists/gradle-9.2.1-bin/2t0n5ozlw9xmuyvbp7dnzaxug/gradle-9.2.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :createMinecraftArtifacts
+Loaded 127 artifacts from /root/home/forks/mi-stack/CodeChickenLib/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[0m[0m
+  ↓ https://launchermeta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[0m Completed [4mdownloadManifest[0m in 1.05s
+[1m*** Started working on [4mdownloadJson[0m[0m
+ [1m[92m✓[0m Completed [4mdownloadJson[0m in 0.01s
+[1m*** Started working on [4mdownloadServer[0m[0m
+[1m*** Started working on [4mdownloadClient[0m[0m
+ [1m[92m✓[0m Completed [4mdownloadClient[0m in 0.10s
+ [1m[92m✓[0m Completed [4mdownloadServer[0m in 0.14s
+[1m*** Started working on [4mpreProcessJar[0m[0m
+ [1m[92m♻[0m Used cache of [4mpreProcessJar[0m in 0.00s
+[1m*** Started working on [4mdecompile[0m[0m
+ [1m[92m♻[0m Used cache of [4mdecompile[0m in 0.00s
+[1m*** Started working on [4mpatch[0m[0m
+ [1m[92m♻[0m Used cache of [4mpatch[0m in 0.00s
+[1m*** Started working on [4mapplyNeoforgePatches[0m[0m
+ [1m[92m♻[0m Used cache of [4mapplyNeoforgePatches[0m in 0.00s
+[1m*** Started working on [4mtransformSources[0m[0m
+ ↳ Running external tool net.neoforged.jst:jst-cli-bundle:2.0.6
+ [1m[92m✓[0m Completed [4mtransformSources[0m in 30.25s
+[1m*** Started working on [4mrecompile[0m[0m
+ 92 items on the compile classpath
+ 1 items on the sourcepath
+ Compiling 6882 source files
+Copied 18752 resource files
+ [1m[92m✓[0m Completed [4mrecompile[0m in 119.00s
+[1m*** Started working on [4mmergeWithSources[0m[0m
+ [1m[92m✓[0m Completed [4mmergeWithSources[0m in 4.88s
+Total runtime: 157.92s
+
+
+> Task :compileJava
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/CCRenderState.java:23: error: cannot find symbol
+import net.minecraft.client.renderer.block.model.BakedQuad;
+                                                ^
+  symbol:   class BakedQuad
+  location: package net.minecraft.client.renderer.block.model
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/CCRenderState.java:28: error: cannot find symbol
+import net.minecraft.world.level.BlockAndTintGetter;
+                                ^
+  symbol:   class BlockAndTintGetter
+  location: package net.minecraft.world.level
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/lighting/LightMatrix.java:9: error: cannot find symbol
+import net.minecraft.world.level.BlockAndTintGetter;
+                                ^
+  symbol:   class BlockAndTintGetter
+  location: package net.minecraft.world.level
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:6: error: cannot find symbol
+import net.minecraft.client.renderer.block.model.BakedQuad;
+                                                ^
+  symbol:   class BakedQuad
+  location: package net.minecraft.client.renderer.block.model
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:8: error: cannot find symbol
+import net.minecraft.client.resources.model.QuadCollection;
+                                           ^
+  symbol:   class QuadCollection
+  location: package net.minecraft.client.resources.model
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/CCRenderState.java:195: error: cannot find symbol
+    public void preRenderWorld(BlockAndTintGetter world, BlockPos pos) {
+                               ^
+  symbol:   class BlockAndTintGetter
+  location: class CCRenderState
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/CCRenderState.java:280: error: cannot find symbol
+    public void setBrightness(BlockAndTintGetter world, BlockPos pos) {
+                              ^
+  symbol:   class BlockAndTintGetter
+  location: class CCRenderState
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:22: error: cannot find symbol
+    private final List<BakedQuad> quadList = new ArrayList<>();
+                       ^
+  symbol:   class BakedQuad
+  location: class BakedQuadVertexBuilder
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/model/Quad.java:27: error: cannot find symbol
+import net.minecraft.client.renderer.block.model.BakedQuad;
+                                                ^
+  symbol:   class BakedQuad
+  location: package net.minecraft.client.renderer.block.model
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:114: error: cannot find symbol
+    private List<BakedQuad> finish() {
+                 ^
+  symbol:   class BakedQuad
+  location: class BakedQuadVertexBuilder
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:120: error: cannot find symbol
+    public List<BakedQuad> getQuads() {
+                ^
+  symbol:   class BakedQuad
+  location: class BakedQuadVertexBuilder
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:127: error: package QuadCollection does not exist
+    public void getAsCulled(QuadCollection.Builder builder, Direction face) {
+                                          ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:136: error: package QuadCollection does not exist
+    public void getAsCulled(QuadCollection.Builder builder) {
+                                          ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:143: error: package QuadCollection does not exist
+    public void getAsUnculled(QuadCollection.Builder builder) {
+                                            ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/model/Quad.java:72: error: cannot find symbol
+    public Quad(BakedQuad quad) {
+                ^
+  symbol:   class BakedQuad
+  location: class Quad
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/model/Quad.java:228: error: cannot find symbol
+    public Quad copyFrom(BakedQuad quad) {
+                         ^
+  symbol:   class BakedQuad
+  location: class Quad
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/model/Quad.java:272: error: cannot find symbol
+    public BakedQuad bake() {
+           ^
+  symbol:   class BakedQuad
+  location: class Quad
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/lighting/LightMatrix.java:26: error: cannot find symbol
+    public @Nullable BlockAndTintGetter access;
+                     ^
+  symbol:   class BlockAndTintGetter
+  location: class LightMatrix
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/lighting/LightMatrix.java:87: error: cannot find symbol
+    public void locate(BlockAndTintGetter a, BlockPos bPos) {
+                       ^
+  symbol:   class BlockAndTintGetter
+  location: class LightMatrix
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:7: error: package mezz.jei.api does not exist
+import mezz.jei.api.IModPlugin;
+                   ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:8: error: package mezz.jei.api does not exist
+import mezz.jei.api.JeiPlugin;
+                   ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:9: error: package mezz.jei.api.constants does not exist
+import mezz.jei.api.constants.VanillaTypes;
+                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:10: error: package mezz.jei.api.gui.handlers does not exist
+import mezz.jei.api.gui.handlers.IGhostIngredientHandler;
+                                ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:11: error: package mezz.jei.api.gui.handlers does not exist
+import mezz.jei.api.gui.handlers.IGuiContainerHandler;
+                                ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:12: error: package mezz.jei.api.ingredients does not exist
+import mezz.jei.api.ingredients.ITypedIngredient;
+                               ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:13: error: package mezz.jei.api.registration does not exist
+import mezz.jei.api.registration.IGuiHandlerRegistration;
+                                ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:29: error: cannot find symbol
+public class JEIPlugin implements IModPlugin {
+                                  ^
+  symbol: class IModPlugin
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:28: error: cannot find symbol
+@JeiPlugin
+ ^
+  symbol: class JeiPlugin
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:42: error: cannot find symbol
+    public void registerGuiHandlers(IGuiHandlerRegistration registration) {
+                                    ^
+  symbol:   class IGuiHandlerRegistration
+  location: class JEIPlugin
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:53: error: cannot find symbol
+    private static class IngredientDropHandler implements IGhostIngredientHandler<ModularGuiContainer<?>> {
+                                                          ^
+  symbol:   class IGhostIngredientHandler
+  location: class JEIPlugin
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:10: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:20: error: cannot find symbol
+import net.minecraft.world.inventory.ClickType;
+                                    ^
+  symbol:   class ClickType
+  location: package net.minecraft.world.inventory
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/container/ContainerScreenAccess.java:4: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGui.java:14: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:59: error: cannot find symbol
+        public <I> List<Target<I>> getTargetsTyped(ModularGuiContainer<?> screen, ITypedIngredient<I> ingredient, boolean doStart) {
+                                                                                  ^
+  symbol:   class ITypedIngredient
+  location: class IngredientDropHandler
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:59: error: cannot find symbol
+        public <I> List<Target<I>> getTargetsTyped(ModularGuiContainer<?> screen, ITypedIngredient<I> ingredient, boolean doStart) {
+                        ^
+  symbol:   class Target
+  location: class IngredientDropHandler
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiElement.java:16: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/TooltipHandler.java:7: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGui.java:211: error: cannot find symbol
+    public void render(GuiGraphics graphics, float partialTicks) {
+                       ^
+  symbol:   class GuiGraphics
+  location: class ModularGui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGui.java:227: error: cannot find symbol
+    public boolean renderOverlay(GuiGraphics graphics, float partialTicks) {
+                                 ^
+  symbol:   class GuiGraphics
+  location: class ModularGui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiElement.java:331: error: cannot find symbol
+    public void render(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks) {
+                       ^
+  symbol:   class GuiGraphics
+  location: class GuiElement<T>
+  where T is a type-variable:
+    T extends GuiElement<T> declared in class GuiElement
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiElement.java:348: error: cannot find symbol
+    protected boolean renderChild(GuiElement<?> child, GuiGraphics graphics, double mouseX, double mouseY, float partialTicks) {
+                                                       ^
+  symbol:   class GuiGraphics
+  location: class GuiElement<T>
+  where T is a type-variable:
+    T extends GuiElement<T> declared in class GuiElement
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiElement.java:372: error: cannot find symbol
+    public boolean renderOverlay(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks, boolean consumed) {
+                                 ^
+  symbol:   class GuiGraphics
+  location: class GuiElement<T>
+  where T is a type-variable:
+    T extends GuiElement<T> declared in class GuiElement
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/TooltipHandler.java:103: error: cannot find symbol
+    default boolean renderTooltip(GuiGraphics graphics, Font font, double mouseX, double mouseY) {
+                                  ^
+  symbol:   class GuiGraphics
+  location: interface TooltipHandler<T>
+  where T is a type-variable:
+    T extends TooltipHandler<T> declared in interface TooltipHandler
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:80: error: cannot find symbol
+    public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
+                       ^
+  symbol:   class GuiGraphics
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:94: error: cannot find symbol
+    private void renderModularGui(GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
+                                  ^
+  symbol:   class GuiGraphics
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:99: error: cannot find symbol
+    public void renderBackground(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
+                                 ^
+  symbol:   class GuiGraphics
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:106: error: cannot find symbol
+    public void renderCarriedItem(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+                                  ^
+  symbol:   class GuiGraphics
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:112: error: cannot find symbol
+    public void renderSnapbackItem(GuiGraphics guiGraphics) {
+                                   ^
+  symbol:   class GuiGraphics
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:117: error: cannot find symbol
+    protected boolean handleFloatingItemRender(GuiGraphics graphics, int mouseX, int mouseY) {
+                                               ^
+  symbol:   class GuiGraphics
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:153: error: cannot find symbol
+    protected boolean renderHoveredStackToolTip(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+                                                ^
+  symbol:   class GuiGraphics
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:225: error: cannot find symbol
+    protected void renderBg(GuiGraphics guiGraphics, float f, int i, int j) {
+                            ^
+  symbol:   class GuiGraphics
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:229: error: cannot find symbol
+    protected void renderSlot(GuiGraphics guiGraphics, Slot slot, int mouseX, int mouseY) {
+                              ^
+  symbol:   class GuiGraphics
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:239: error: cannot find symbol
+    public void doRenderSlot(GuiGraphics graphics, Slot slot) {
+                             ^
+  symbol:   class GuiGraphics
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:295: error: cannot find symbol
+    protected void renderLabels(GuiGraphics guiGraphics, int i, int j) {
+                                ^
+  symbol:   class GuiGraphics
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:313: error: cannot find symbol
+    protected void slotClicked(Slot slot, int i, int j, ClickType clickType) {
+                                                        ^
+  symbol:   class ClickType
+  location: class ModularGuiContainer<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in class ModularGuiContainer
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/container/ContainerScreenAccess.java:20: error: cannot find symbol
+    void doRenderSlot(GuiGraphics render, Slot slot);
+                      ^
+  symbol:   class GuiGraphics
+  location: interface ContainerScreenAccess<T>
+  where T is a type-variable:
+    T extends AbstractContainerMenu declared in interface ContainerScreenAccess
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:81: error: package IGhostIngredientHandler does not exist
+    private record DropTarget<I>(GuiElement<?> element) implements IGhostIngredientHandler.Target<I> {
+                                                                                          ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/mixin/render/GuiGraphicsMixin.java:4: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/render/GuiGraphicsExtension.java:8: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/render/GuiGraphicsExtension.java:10: error: package net.minecraft.client.gui.render.state does not exist
+import net.minecraft.client.gui.render.state.BlitRenderState;
+                                            ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/render/GuiGraphicsExtension.java:32: error: cannot find symbol
+    private GuiGraphics self() {
+            ^
+  symbol:   class GuiGraphics
+  location: interface GuiGraphicsExtension
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/render/CCCustomRenderState.java:7: error: package net.minecraft.client.gui.render.state does not exist
+import net.minecraft.client.gui.render.state.GuiElementRenderState;
+                                            ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/render/CCCustomRenderState.java:21: error: cannot find symbol
+) implements GuiElementRenderState {
+             ^
+  symbol: class GuiElementRenderState
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/HighlightHandler.java:55: error: cannot find symbol
+    private static void renderLevelLast(RenderLevelStageEvent.AfterParticles event) {
+                                                             ^
+  symbol:   class AfterParticles
+  location: class RenderLevelStageEvent
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/ItemFileRenderer.java:14: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:3: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+import codechicken.lib.packet.ICustomPacketHandler.IClientConfigurationPacketHandler;
+                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:4: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+import codechicken.lib.packet.ICustomPacketHandler.IClientPacketHandler;
+                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:5: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+import codechicken.lib.packet.ICustomPacketHandler.IServerConfigurationPacketHandler;
+                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:6: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+import codechicken.lib.packet.ICustomPacketHandler.IServerPacketHandler;
+                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:10: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+import static codechicken.lib.packet.ICustomPacketHandler.IClientPacketHandler;
+                                    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiText.java:10: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/ForegroundRender.java:4: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiText.java:211: error: cannot find symbol
+    public void renderInFront(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks) {
+                              ^
+  symbol:   class GuiGraphics
+  location: class GuiText
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/ForegroundRender.java:21: error: cannot find symbol
+    void renderInFront(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks);
+                       ^
+  symbol:   class GuiGraphics
+  location: interface ForegroundRender
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiTextField.java:10: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/BackgroundRender.java:4: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiRectangle.java:6: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiTextField.java:604: error: cannot find symbol
+    public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                             ^
+  symbol:   class GuiGraphics
+  location: class GuiTextField
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiRectangle.java:165: error: cannot find symbol
+    public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                             ^
+  symbol:   class GuiGraphics
+  location: class GuiRectangle
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/BackgroundRender.java:21: error: cannot find symbol
+    void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks);
+                      ^
+  symbol:   class GuiGraphics
+  location: interface BackgroundRender
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiDVD.java:8: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiDVD.java:67: error: cannot find symbol
+    public void render(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                       ^
+  symbol:   class GuiGraphics
+  location: class GuiDVD
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiColourPicker.java:8: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiColourPicker.java:189: error: cannot find symbol
+        public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                                 ^
+  symbol:   class GuiGraphics
+  location: class SliderBG
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiColourPicker.java:212: error: cannot find symbol
+        public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                                 ^
+  symbol:   class GuiGraphics
+  location: class ColourPreview
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiSlots.java:13: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/SpriteSupplier.java:6: error: cannot find symbol
+import net.minecraft.client.resources.model.Material;
+                                           ^
+  symbol:   class Material
+  location: package net.minecraft.client.resources.model
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiSlots.java:56: error: cannot find symbol
+    private @Nullable TriConsumer<Slot, Position, GuiGraphics> slotOverlay = null;
+                                                  ^
+  symbol:   class GuiGraphics
+  location: class GuiSlots
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiSlots.java:281: error: cannot find symbol
+    public GuiSlots setSlotOverlay(TriConsumer<Slot, Position, GuiGraphics> slotOverlay) {
+                                                               ^
+  symbol:   class GuiGraphics
+  location: class GuiSlots
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiSlots.java:294: error: cannot find symbol
+    public GuiSlots setSlotOverlayI(TriConsumer<Integer, Position, GuiGraphics> slotOverlay) {
+                                                                   ^
+  symbol:   class GuiGraphics
+  location: class GuiSlots
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiSlots.java:340: error: cannot find symbol
+    public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                             ^
+  symbol:   class GuiGraphics
+  location: class GuiSlots
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/SpriteSupplier.java:51: error: cannot find symbol
+    static SpriteSupplier of(Supplier<Material> sup) {
+                                      ^
+  symbol:   class Material
+  location: interface SpriteSupplier
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiScrolling.java:11: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiScrolling.java:155: error: cannot find symbol
+    protected boolean renderChild(GuiElement<?> child, GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                                                       ^
+  symbol:   class GuiGraphics
+  location: class GuiScrolling
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiTextList.java:9: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiTextList.java:146: error: cannot find symbol
+    public void renderInFront(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                              ^
+  symbol:   class GuiGraphics
+  location: class GuiTextList
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiList.java:6: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiList.java:227: error: cannot find symbol
+    public void render(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                       ^
+  symbol:   class GuiGraphics
+  location: class GuiList<E>
+  where E is a type-variable:
+    E extends Object declared in class GuiList
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiItemStack.java:6: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiItemStack.java:96: error: cannot find symbol
+    public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                             ^
+  symbol:   class GuiGraphics
+  location: class GuiItemStack
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiItemStack.java:108: error: cannot find symbol
+    public boolean renderOverlay(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks, boolean consumed) {
+                                 ^
+  symbol:   class GuiGraphics
+  location: class GuiItemStack
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiProgressIcon.java:9: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiProgressIcon.java:103: error: cannot find symbol
+    public void renderBehind(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks) {
+                             ^
+  symbol:   class GuiGraphics
+  location: class GuiProgressIcon
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiEntityRenderer.java:7: error: cannot find symbol
+import net.minecraft.client.gui.GuiGraphics;
+                               ^
+  symbol:   class GuiGraphics
+  location: package net.minecraft.client.gui
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/AbstractRecipeBuilder.java:96: warning: [removal] parent(Identifier) in Builder has been deprecated and marked for removal
+            advancementBuilder.parent(Identifier.withDefaultNamespace("recipes/root"))
+                              ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/ICustomPacketHandler.java:26: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+        void handlePacket(PacketCustom packet, Minecraft mc);
+                          ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/ICustomPacketHandler.java:38: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+        void handlePacket(PacketCustom packet, ServerPlayer sender);
+                          ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/ICustomPacketHandler.java:53: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+        void handlePacket(PacketCustom packet, Minecraft mc);
+                          ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/ICustomPacketHandler.java:62: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+        void handlePacket(PacketCustom packet, ServerPlayer sender, Consumer<ConfigurationTask.Type> onTaskCompleted);
+                          ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleServerPacketHandler.java:16: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+public class SimpleServerPacketHandler implements IServerPacketHandler {
+                                                  ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleServerPacketHandler.java:20: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+    private static final Int2ObjectMap<IServerPacketHandler> handlers = new Int2ObjectArrayMap<>();
+                                       ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleServerPacketHandler.java:22: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+    protected void addHandler(int id, IServerPacketHandler handler) {
+                                      ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleServerPacketHandler.java:30: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+    public void handlePacket(PacketCustom packet, ServerPlayer sender) {
+                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleServerPacketHandler.java:31: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+        IServerPacketHandler h = handlers.get(packet.getType());
+        ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:23: warning: [removal] MCDataInput in codechicken.lib.data has been deprecated and marked for removal
+public class MCDataByteBuf implements MCDataInput, MCDataOutput {
+                                      ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:23: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+public class MCDataByteBuf implements MCDataInput, MCDataOutput {
+                                                   ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:86: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    public <T> MCDataOutput writeWithCodec(StreamEncoder<? super FriendlyByteBuf, T> codec, T thing) {
+               ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:92: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    public <T> MCDataOutput writeWithRegistryCodec(StreamEncoder<? super RegistryFriendlyByteBuf, T> codec, T thing) {
+               ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:118: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    @Override public MCDataOutput writeByte(int b) { buf.writeByte(b); return this; }
+                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:119: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    @Override public MCDataOutput writeChar(int c) { buf.writeChar(c); return this; }
+                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:120: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    @Override public MCDataOutput writeShort(int s) { buf.writeShort(s); return this; }
+                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:121: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    @Override public MCDataOutput writeInt(int i) { buf.writeInt(i); return this; }
+                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:122: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    @Override public MCDataOutput writeLong(long l) { buf.writeLong(l); return this; }
+                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:123: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    @Override public MCDataOutput writeFloat(float f) { buf.writeFloat(f); return this; }
+                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:124: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    @Override public MCDataOutput writeDouble(double d) { buf.writeDouble(d); return this; }
+                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:125: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    @Override public MCDataOutput writeBoolean(boolean b) { buf.writeBoolean(b); return this; }
+                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustom.java:37: warning: [removal] MCDataByteBuf in codechicken.lib.data has been deprecated and marked for removal
+public final class PacketCustom extends MCDataByteBuf {
+                                        ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:40: warning: [removal] IClientConfigurationPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+    private @Nullable IClientConfigurationPacketHandler clientConfiguration;
+                      ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:41: warning: [removal] IServerConfigurationPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+    private @Nullable IServerConfigurationPacketHandler serverConfiguration;
+                      ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:43: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+    private @Nullable IClientPacketHandler client;
+                      ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:44: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+    private @Nullable IServerPacketHandler server;
+                      ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:60: warning: [removal] IClientConfigurationPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+    public PacketCustomChannel clientConfiguration(Supplier<Supplier<IClientConfigurationPacketHandler>> supplier) {
+                                                                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:73: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+    public PacketCustomChannel client(Supplier<Supplier<IClientPacketHandler>> supplier) {
+                                                        ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:80: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+    public PacketCustomChannel server(Supplier<Supplier<IServerPacketHandler>> supplier) {
+                                                        ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:99: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+        CustomPacketPayload.Type<PacketCustom.Pkt> type = new CustomPacketPayload.Type<>(channel);
+                                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:100: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+        StreamCodec<FriendlyByteBuf, PacketCustom.Pkt> codec = StreamCodec.of(
+                                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:104: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                    return new PacketCustom.Pkt(type, access, buf.readBytes(buf.readableBytes()));
+                               ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:101: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                (buf, p) -> buf.writeBytes(p.data(), 0, p.data().writerIndex()),
+                      ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:110: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                (payload, context) -> {
+                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:113: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                            server.handlePacket(new PacketCustom(payload), (ServerPlayer) context.player());
+                                                    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:121: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                (payload, context) -> {
+                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:124: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                            clientConfiguration.handlePacket(new PacketCustom(payload), Minecraft.getInstance());
+                                                                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:133: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                new CustomPacketPayload.Type<PacketCustom.Pkt>(channel),
+                                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:135: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                (payload, context) -> {
+                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:138: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                            client.handlePacket(new PacketCustom(payload), Minecraft.getInstance());
+                                                    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:145: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+    private static void enqueue(IPayloadContext context, PacketCustom.Pkt payload, Runnable runnable) {
+                                                         ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:16: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+public class SimpleClientPacketHandler implements IClientPacketHandler {
+                                                  ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:20: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+    private static final Int2ObjectMap<IClientPacketHandler> handlers = new Int2ObjectArrayMap<>();
+                                       ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:22: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+    protected void addHandler(int id, IClientPacketHandler handler) {
+                                      ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:30: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+    public void handlePacket(PacketCustom packet, Minecraft mc) {
+                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:31: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+        IClientPacketHandler h = handlers.get(packet.getType());
+        ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:18: warning: [removal] SlotItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+public class ModularSlot extends SlotItemHandler {
+                                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:29: warning: [removal] InvWrapper in net.neoforged.neoforge.items.wrapper has been deprecated and marked for removal
+        this(new InvWrapper(container), index, 0, 0);
+                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:32: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+    public ModularSlot(IItemHandler itemHandler, int index) {
+                       ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:37: warning: [removal] InvWrapper in net.neoforged.neoforge.items.wrapper has been deprecated and marked for removal
+        super(new InvWrapper(container), index, xPos, yPos);
+                  ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:40: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+    public ModularSlot(IItemHandler itemHandler, int index, int xPos, int yPos) {
+                       ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:109: warning: [removal] isItemValid(int,ItemStack) in IItemHandler has been deprecated and marked for removal
+        return canPlace && validator.test(itemStack) && (!checkContainer || getItemHandler().isItemValid(getContainerSlot(), itemStack));
+                                                                                            ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:18: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+public class MCDataOutputStream implements MCDataOutput {
+                                           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:31: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    public MCDataOutput writeByte(int b) {
+           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:41: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    public MCDataOutput writeChar(int c) {
+           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:51: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    public MCDataOutput writeShort(int s) {
+           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:61: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    public MCDataOutput writeInt(int i) {
+           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:71: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    public MCDataOutput writeLong(long l) {
+           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:81: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    public MCDataOutput writeFloat(float f) {
+           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:91: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    public MCDataOutput writeDouble(double d) {
+           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:101: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+    public MCDataOutput writeBoolean(boolean b) {
+           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCByteStream.java:12: warning: [removal] MCDataOutputStream in codechicken.lib.data has been deprecated and marked for removal
+public class MCByteStream extends MCDataOutputStream {
+                                  ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataInputStream.java:18: warning: [removal] MCDataInput in codechicken.lib.data has been deprecated and marked for removal
+public class MCDataInputStream implements MCDataInput {
+                                          ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:243: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+    public static boolean canInsertStack(IItemHandler handler, int slot, ItemStack stack) {
+                                         ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:244: warning: [removal] insertItem(int,ItemStack,boolean) in IItemHandler has been deprecated and marked for removal
+        return handler.insertItem(slot, stack, true) != stack;
+                      ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:247: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+    public static boolean canExtractStack(IItemHandler handler, int slot) {
+                                          ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:248: warning: [removal] getStackInSlot(int) in IItemHandler has been deprecated and marked for removal
+        ItemStack stack = handler.getStackInSlot(slot);
+                                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:250: warning: [removal] extractItem(int,int,boolean) in IItemHandler has been deprecated and marked for removal
+            return !handler.extractItem(slot, stack.getMaxStackSize(), true).isEmpty();
+                           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:255: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+    public static ItemStack insertItem(IItemHandler handler, ItemStack insert, boolean simulate) {
+                                       ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:258: warning: [removal] getSlots() in IItemHandler has been deprecated and marked for removal
+            for (int slot = 0; slot < handler.getSlots(); slot++) {
+                                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:259: warning: [removal] getStackInSlot(int) in IItemHandler has been deprecated and marked for removal
+                ItemStack stack = handler.getStackInSlot(slot);
+                                         ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:266: warning: [removal] insertItem(int,ItemStack,boolean) in IItemHandler has been deprecated and marked for removal
+                insert = handler.insertItem(slot, insert, simulate);
+                                ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:282: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+    public static int countMatchingStacks(IItemHandler handler, ItemStack filter, boolean insert) {
+                                          ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:285: warning: [removal] getSlots() in IItemHandler has been deprecated and marked for removal
+        for (int slot = 0; slot < handler.getSlots(); slot++) {
+                                         ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:286: warning: [removal] getStackInSlot(int) in IItemHandler has been deprecated and marked for removal
+            ItemStack stack = handler.getStackInSlot(slot);
+                                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:294: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+    public static int getInsertableQuantity(IItemHandler handler, ItemStack stack) {
+                                            ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:297: warning: [removal] getSlots() in IItemHandler has been deprecated and marked for removal
+        for (int slot = 0; slot < handler.getSlots(); slot++) {
+                                         ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:299: warning: [removal] insertItem(int,ItemStack,boolean) in IItemHandler has been deprecated and marked for removal
+                ItemStack left = handler.insertItem(slot, copy, true);
+                                        ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+84 warnings
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///root/home/forks/mi-stack/CodeChickenLib/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  Note: Recompile with -Xlint:deprecation for details.
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/CCRenderState.java:23: error: cannot find symbol
+  import net.minecraft.client.renderer.block.model.BakedQuad;
+                                                  ^
+    symbol:   class BakedQuad
+    location: package net.minecraft.client.renderer.block.model
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/CCRenderState.java:28: error: cannot find symbol
+  import net.minecraft.world.level.BlockAndTintGetter;
+                                  ^
+    symbol:   class BlockAndTintGetter
+    location: package net.minecraft.world.level
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/lighting/LightMatrix.java:9: error: cannot find symbol
+  import net.minecraft.world.level.BlockAndTintGetter;
+                                  ^
+    symbol:   class BlockAndTintGetter
+    location: package net.minecraft.world.level
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:6: error: cannot find symbol
+  import net.minecraft.client.renderer.block.model.BakedQuad;
+                                                  ^
+    symbol:   class BakedQuad
+    location: package net.minecraft.client.renderer.block.model
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:8: error: cannot find symbol
+  import net.minecraft.client.resources.model.QuadCollection;
+                                             ^
+    symbol:   class QuadCollection
+    location: package net.minecraft.client.resources.model
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/CCRenderState.java:195: error: cannot find symbol
+      public void preRenderWorld(BlockAndTintGetter world, BlockPos pos) {
+                                 ^
+    symbol:   class BlockAndTintGetter
+    location: class CCRenderState
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/CCRenderState.java:280: error: cannot find symbol
+      public void setBrightness(BlockAndTintGetter world, BlockPos pos) {
+                                ^
+    symbol:   class BlockAndTintGetter
+    location: class CCRenderState
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:22: error: cannot find symbol
+      private final List<BakedQuad> quadList = new ArrayList<>();
+                         ^
+    symbol:   class BakedQuad
+    location: class BakedQuadVertexBuilder
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/model/Quad.java:27: error: cannot find symbol
+  import net.minecraft.client.renderer.block.model.BakedQuad;
+                                                  ^
+    symbol:   class BakedQuad
+    location: package net.minecraft.client.renderer.block.model
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:114: error: cannot find symbol
+      private List<BakedQuad> finish() {
+                   ^
+    symbol:   class BakedQuad
+    location: class BakedQuadVertexBuilder
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:120: error: cannot find symbol
+      public List<BakedQuad> getQuads() {
+                  ^
+    symbol:   class BakedQuad
+    location: class BakedQuadVertexBuilder
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/model/Quad.java:72: error: cannot find symbol
+      public Quad(BakedQuad quad) {
+                  ^
+    symbol:   class BakedQuad
+    location: class Quad
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/model/Quad.java:228: error: cannot find symbol
+      public Quad copyFrom(BakedQuad quad) {
+                           ^
+    symbol:   class BakedQuad
+    location: class Quad
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/model/Quad.java:272: error: cannot find symbol
+      public BakedQuad bake() {
+             ^
+    symbol:   class BakedQuad
+    location: class Quad
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/lighting/LightMatrix.java:26: error: cannot find symbol
+      public @Nullable BlockAndTintGetter access;
+                       ^
+    symbol:   class BlockAndTintGetter
+    location: class LightMatrix
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/lighting/LightMatrix.java:87: error: cannot find symbol
+      public void locate(BlockAndTintGetter a, BlockPos bPos) {
+                         ^
+    symbol:   class BlockAndTintGetter
+    location: class LightMatrix
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:42: error: cannot find symbol
+      public void registerGuiHandlers(IGuiHandlerRegistration registration) {
+                                      ^
+    symbol:   class IGuiHandlerRegistration
+    location: class JEIPlugin
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:53: error: cannot find symbol
+      private static class IngredientDropHandler implements IGhostIngredientHandler<ModularGuiContainer<?>> {
+                                                            ^
+    symbol:   class IGhostIngredientHandler
+    location: class JEIPlugin
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:10: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:20: error: cannot find symbol
+  import net.minecraft.world.inventory.ClickType;
+                                      ^
+    symbol:   class ClickType
+    location: package net.minecraft.world.inventory
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/container/ContainerScreenAccess.java:4: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGui.java:14: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:59: error: cannot find symbol
+          public <I> List<Target<I>> getTargetsTyped(ModularGuiContainer<?> screen, ITypedIngredient<I> ingredient, boolean doStart) {
+                                                                                    ^
+    symbol:   class ITypedIngredient
+    location: class IngredientDropHandler
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:59: error: cannot find symbol
+          public <I> List<Target<I>> getTargetsTyped(ModularGuiContainer<?> screen, ITypedIngredient<I> ingredient, boolean doStart) {
+                          ^
+    symbol:   class Target
+    location: class IngredientDropHandler
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiElement.java:16: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/TooltipHandler.java:7: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGui.java:211: error: cannot find symbol
+      public void render(GuiGraphics graphics, float partialTicks) {
+                         ^
+    symbol:   class GuiGraphics
+    location: class ModularGui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGui.java:227: error: cannot find symbol
+      public boolean renderOverlay(GuiGraphics graphics, float partialTicks) {
+                                   ^
+    symbol:   class GuiGraphics
+    location: class ModularGui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiElement.java:331: error: cannot find symbol
+      public void render(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks) {
+                         ^
+    symbol:   class GuiGraphics
+    location: class GuiElement<T>
+    where T is a type-variable:
+      T extends GuiElement<T> declared in class GuiElement
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiElement.java:348: error: cannot find symbol
+      protected boolean renderChild(GuiElement<?> child, GuiGraphics graphics, double mouseX, double mouseY, float partialTicks) {
+                                                         ^
+    symbol:   class GuiGraphics
+    location: class GuiElement<T>
+    where T is a type-variable:
+      T extends GuiElement<T> declared in class GuiElement
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiElement.java:372: error: cannot find symbol
+      public boolean renderOverlay(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks, boolean consumed) {
+                                   ^
+    symbol:   class GuiGraphics
+    location: class GuiElement<T>
+    where T is a type-variable:
+      T extends GuiElement<T> declared in class GuiElement
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/TooltipHandler.java:103: error: cannot find symbol
+      default boolean renderTooltip(GuiGraphics graphics, Font font, double mouseX, double mouseY) {
+                                    ^
+    symbol:   class GuiGraphics
+    location: interface TooltipHandler<T>
+    where T is a type-variable:
+      T extends TooltipHandler<T> declared in interface TooltipHandler
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:80: error: cannot find symbol
+      public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
+                         ^
+    symbol:   class GuiGraphics
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:94: error: cannot find symbol
+      private void renderModularGui(GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
+                                    ^
+    symbol:   class GuiGraphics
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:99: error: cannot find symbol
+      public void renderBackground(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
+                                   ^
+    symbol:   class GuiGraphics
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:106: error: cannot find symbol
+      public void renderCarriedItem(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+                                    ^
+    symbol:   class GuiGraphics
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:112: error: cannot find symbol
+      public void renderSnapbackItem(GuiGraphics guiGraphics) {
+                                     ^
+    symbol:   class GuiGraphics
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:117: error: cannot find symbol
+      protected boolean handleFloatingItemRender(GuiGraphics graphics, int mouseX, int mouseY) {
+                                                 ^
+    symbol:   class GuiGraphics
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:153: error: cannot find symbol
+      protected boolean renderHoveredStackToolTip(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+                                                  ^
+    symbol:   class GuiGraphics
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:225: error: cannot find symbol
+      protected void renderBg(GuiGraphics guiGraphics, float f, int i, int j) {
+                              ^
+    symbol:   class GuiGraphics
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:229: error: cannot find symbol
+      protected void renderSlot(GuiGraphics guiGraphics, Slot slot, int mouseX, int mouseY) {
+                                ^
+    symbol:   class GuiGraphics
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:239: error: cannot find symbol
+      public void doRenderSlot(GuiGraphics graphics, Slot slot) {
+                               ^
+    symbol:   class GuiGraphics
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:295: error: cannot find symbol
+      protected void renderLabels(GuiGraphics guiGraphics, int i, int j) {
+                                  ^
+    symbol:   class GuiGraphics
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/ModularGuiContainer.java:313: error: cannot find symbol
+      protected void slotClicked(Slot slot, int i, int j, ClickType clickType) {
+                                                          ^
+    symbol:   class ClickType
+    location: class ModularGuiContainer<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in class ModularGuiContainer
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/container/ContainerScreenAccess.java:20: error: cannot find symbol
+      void doRenderSlot(GuiGraphics render, Slot slot);
+                        ^
+    symbol:   class GuiGraphics
+    location: interface ContainerScreenAccess<T>
+    where T is a type-variable:
+      T extends AbstractContainerMenu declared in interface ContainerScreenAccess
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/mixin/render/GuiGraphicsMixin.java:4: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/render/GuiGraphicsExtension.java:8: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/render/GuiGraphicsExtension.java:32: error: cannot find symbol
+      private GuiGraphics self() {
+              ^
+    symbol:   class GuiGraphics
+    location: interface GuiGraphicsExtension
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/HighlightHandler.java:55: error: cannot find symbol
+      private static void renderLevelLast(RenderLevelStageEvent.AfterParticles event) {
+                                                               ^
+    symbol:   class AfterParticles
+    location: class RenderLevelStageEvent
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/ItemFileRenderer.java:14: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiText.java:10: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/ForegroundRender.java:4: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiText.java:211: error: cannot find symbol
+      public void renderInFront(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks) {
+                                ^
+    symbol:   class GuiGraphics
+    location: class GuiText
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/ForegroundRender.java:21: error: cannot find symbol
+      void renderInFront(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks);
+                         ^
+    symbol:   class GuiGraphics
+    location: interface ForegroundRender
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiTextField.java:10: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/BackgroundRender.java:4: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiRectangle.java:6: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiTextField.java:604: error: cannot find symbol
+      public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                               ^
+    symbol:   class GuiGraphics
+    location: class GuiTextField
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiRectangle.java:165: error: cannot find symbol
+      public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                               ^
+    symbol:   class GuiGraphics
+    location: class GuiRectangle
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/lib/BackgroundRender.java:21: error: cannot find symbol
+      void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks);
+                        ^
+    symbol:   class GuiGraphics
+    location: interface BackgroundRender
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiDVD.java:8: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiDVD.java:67: error: cannot find symbol
+      public void render(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                         ^
+    symbol:   class GuiGraphics
+    location: class GuiDVD
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiColourPicker.java:8: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiColourPicker.java:189: error: cannot find symbol
+          public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                                   ^
+    symbol:   class GuiGraphics
+    location: class SliderBG
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiColourPicker.java:212: error: cannot find symbol
+          public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                                   ^
+    symbol:   class GuiGraphics
+    location: class ColourPreview
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiSlots.java:13: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/SpriteSupplier.java:6: error: cannot find symbol
+  import net.minecraft.client.resources.model.Material;
+                                             ^
+    symbol:   class Material
+    location: package net.minecraft.client.resources.model
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiSlots.java:56: error: cannot find symbol
+      private @Nullable TriConsumer<Slot, Position, GuiGraphics> slotOverlay = null;
+                                                    ^
+    symbol:   class GuiGraphics
+    location: class GuiSlots
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiSlots.java:281: error: cannot find symbol
+      public GuiSlots setSlotOverlay(TriConsumer<Slot, Position, GuiGraphics> slotOverlay) {
+                                                                 ^
+    symbol:   class GuiGraphics
+    location: class GuiSlots
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiSlots.java:294: error: cannot find symbol
+      public GuiSlots setSlotOverlayI(TriConsumer<Integer, Position, GuiGraphics> slotOverlay) {
+                                                                     ^
+    symbol:   class GuiGraphics
+    location: class GuiSlots
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiSlots.java:340: error: cannot find symbol
+      public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                               ^
+    symbol:   class GuiGraphics
+    location: class GuiSlots
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/SpriteSupplier.java:51: error: cannot find symbol
+      static SpriteSupplier of(Supplier<Material> sup) {
+                                        ^
+    symbol:   class Material
+    location: interface SpriteSupplier
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiScrolling.java:11: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiScrolling.java:155: error: cannot find symbol
+      protected boolean renderChild(GuiElement<?> child, GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                                                         ^
+    symbol:   class GuiGraphics
+    location: class GuiScrolling
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiTextList.java:9: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiTextList.java:146: error: cannot find symbol
+      public void renderInFront(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                                ^
+    symbol:   class GuiGraphics
+    location: class GuiTextList
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiList.java:6: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiList.java:227: error: cannot find symbol
+      public void render(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                         ^
+    symbol:   class GuiGraphics
+    location: class GuiList<E>
+    where E is a type-variable:
+      E extends Object declared in class GuiList
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiItemStack.java:6: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiItemStack.java:96: error: cannot find symbol
+      public void renderBehind(GuiGraphics render, double mouseX, double mouseY, float partialTicks) {
+                               ^
+    symbol:   class GuiGraphics
+    location: class GuiItemStack
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiItemStack.java:108: error: cannot find symbol
+      public boolean renderOverlay(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks, boolean consumed) {
+                                   ^
+    symbol:   class GuiGraphics
+    location: class GuiItemStack
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiProgressIcon.java:9: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiProgressIcon.java:103: error: cannot find symbol
+      public void renderBehind(GuiGraphics graphics, double mouseX, double mouseY, float partialTicks) {
+                               ^
+    symbol:   class GuiGraphics
+    location: class GuiProgressIcon
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/modular/elements/GuiEntityRenderer.java:7: error: cannot find symbol
+  import net.minecraft.client.gui.GuiGraphics;
+                                 ^
+    symbol:   class GuiGraphics
+    location: package net.minecraft.client.gui
+  Note: Recompile with -Xlint:unchecked for details.
+  Note: Some input files use or override a deprecated API.
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:3: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+  import codechicken.lib.packet.ICustomPacketHandler.IClientConfigurationPacketHandler;
+                               ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:4: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+  import codechicken.lib.packet.ICustomPacketHandler.IClientPacketHandler;
+                               ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:5: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+  import codechicken.lib.packet.ICustomPacketHandler.IServerConfigurationPacketHandler;
+                               ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:6: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+  import codechicken.lib.packet.ICustomPacketHandler.IServerPacketHandler;
+                               ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:10: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+  import static codechicken.lib.packet.ICustomPacketHandler.IClientPacketHandler;
+                                      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/AbstractRecipeBuilder.java:96: warning: [removal] parent(Identifier) in Builder has been deprecated and marked for removal
+              advancementBuilder.parent(Identifier.withDefaultNamespace("recipes/root"))
+                                ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/ICustomPacketHandler.java:26: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+          void handlePacket(PacketCustom packet, Minecraft mc);
+                            ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/ICustomPacketHandler.java:38: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+          void handlePacket(PacketCustom packet, ServerPlayer sender);
+                            ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/ICustomPacketHandler.java:53: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+          void handlePacket(PacketCustom packet, Minecraft mc);
+                            ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/ICustomPacketHandler.java:62: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+          void handlePacket(PacketCustom packet, ServerPlayer sender, Consumer<ConfigurationTask.Type> onTaskCompleted);
+                            ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleServerPacketHandler.java:16: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+  public class SimpleServerPacketHandler implements IServerPacketHandler {
+                                                    ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleServerPacketHandler.java:20: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+      private static final Int2ObjectMap<IServerPacketHandler> handlers = new Int2ObjectArrayMap<>();
+                                         ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleServerPacketHandler.java:22: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+      protected void addHandler(int id, IServerPacketHandler handler) {
+                                        ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleServerPacketHandler.java:30: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+      public void handlePacket(PacketCustom packet, ServerPlayer sender) {
+                               ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleServerPacketHandler.java:31: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+          IServerPacketHandler h = handlers.get(packet.getType());
+          ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:23: warning: [removal] MCDataInput in codechicken.lib.data has been deprecated and marked for removal
+  public class MCDataByteBuf implements MCDataInput, MCDataOutput {
+                                        ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:23: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+  public class MCDataByteBuf implements MCDataInput, MCDataOutput {
+                                                     ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:86: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      public <T> MCDataOutput writeWithCodec(StreamEncoder<? super FriendlyByteBuf, T> codec, T thing) {
+                 ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:92: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      public <T> MCDataOutput writeWithRegistryCodec(StreamEncoder<? super RegistryFriendlyByteBuf, T> codec, T thing) {
+                 ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:118: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      @Override public MCDataOutput writeByte(int b) { buf.writeByte(b); return this; }
+                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:119: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      @Override public MCDataOutput writeChar(int c) { buf.writeChar(c); return this; }
+                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:120: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      @Override public MCDataOutput writeShort(int s) { buf.writeShort(s); return this; }
+                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:121: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      @Override public MCDataOutput writeInt(int i) { buf.writeInt(i); return this; }
+                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:122: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      @Override public MCDataOutput writeLong(long l) { buf.writeLong(l); return this; }
+                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:123: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      @Override public MCDataOutput writeFloat(float f) { buf.writeFloat(f); return this; }
+                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:124: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      @Override public MCDataOutput writeDouble(double d) { buf.writeDouble(d); return this; }
+                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataByteBuf.java:125: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      @Override public MCDataOutput writeBoolean(boolean b) { buf.writeBoolean(b); return this; }
+                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustom.java:37: warning: [removal] MCDataByteBuf in codechicken.lib.data has been deprecated and marked for removal
+  public final class PacketCustom extends MCDataByteBuf {
+                                          ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:40: warning: [removal] IClientConfigurationPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+      private @Nullable IClientConfigurationPacketHandler clientConfiguration;
+                        ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:41: warning: [removal] IServerConfigurationPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+      private @Nullable IServerConfigurationPacketHandler serverConfiguration;
+                        ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:43: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+      private @Nullable IClientPacketHandler client;
+                        ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:44: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+      private @Nullable IServerPacketHandler server;
+                        ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:60: warning: [removal] IClientConfigurationPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+      public PacketCustomChannel clientConfiguration(Supplier<Supplier<IClientConfigurationPacketHandler>> supplier) {
+                                                                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:73: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+      public PacketCustomChannel client(Supplier<Supplier<IClientPacketHandler>> supplier) {
+                                                          ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:80: warning: [removal] IServerPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+      public PacketCustomChannel server(Supplier<Supplier<IServerPacketHandler>> supplier) {
+                                                          ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:99: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+          CustomPacketPayload.Type<PacketCustom.Pkt> type = new CustomPacketPayload.Type<>(channel);
+                                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:100: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+          StreamCodec<FriendlyByteBuf, PacketCustom.Pkt> codec = StreamCodec.of(
+                                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:104: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                      return new PacketCustom.Pkt(type, access, buf.readBytes(buf.readableBytes()));
+                                 ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:101: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                  (buf, p) -> buf.writeBytes(p.data(), 0, p.data().writerIndex()),
+                        ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:110: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                  (payload, context) -> {
+                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:113: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                              server.handlePacket(new PacketCustom(payload), (ServerPlayer) context.player());
+                                                      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:121: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                  (payload, context) -> {
+                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:124: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                              clientConfiguration.handlePacket(new PacketCustom(payload), Minecraft.getInstance());
+                                                                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:133: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                  new CustomPacketPayload.Type<PacketCustom.Pkt>(channel),
+                                               ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:135: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                  (payload, context) -> {
+                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:138: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+                              client.handlePacket(new PacketCustom(payload), Minecraft.getInstance());
+                                                      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:145: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+      private static void enqueue(IPayloadContext context, PacketCustom.Pkt payload, Runnable runnable) {
+                                                           ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:16: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+  public class SimpleClientPacketHandler implements IClientPacketHandler {
+                                                    ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:20: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+      private static final Int2ObjectMap<IClientPacketHandler> handlers = new Int2ObjectArrayMap<>();
+                                         ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:22: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+      protected void addHandler(int id, IClientPacketHandler handler) {
+                                        ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:30: warning: [removal] PacketCustom in codechicken.lib.packet has been deprecated and marked for removal
+      public void handlePacket(PacketCustom packet, Minecraft mc) {
+                               ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:31: warning: [removal] IClientPacketHandler in ICustomPacketHandler has been deprecated and marked for removal
+          IClientPacketHandler h = handlers.get(packet.getType());
+          ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:18: warning: [removal] SlotItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+  public class ModularSlot extends SlotItemHandler {
+                                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:29: warning: [removal] InvWrapper in net.neoforged.neoforge.items.wrapper has been deprecated and marked for removal
+          this(new InvWrapper(container), index, 0, 0);
+                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:32: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+      public ModularSlot(IItemHandler itemHandler, int index) {
+                         ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:37: warning: [removal] InvWrapper in net.neoforged.neoforge.items.wrapper has been deprecated and marked for removal
+          super(new InvWrapper(container), index, xPos, yPos);
+                    ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:40: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+      public ModularSlot(IItemHandler itemHandler, int index, int xPos, int yPos) {
+                         ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularSlot.java:109: warning: [removal] isItemValid(int,ItemStack) in IItemHandler has been deprecated and marked for removal
+          return canPlace && validator.test(itemStack) && (!checkContainer || getItemHandler().isItemValid(getContainerSlot(), itemStack));
+                                                                                              ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:18: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+  public class MCDataOutputStream implements MCDataOutput {
+                                             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:31: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      public MCDataOutput writeByte(int b) {
+             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:41: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      public MCDataOutput writeChar(int c) {
+             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:51: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      public MCDataOutput writeShort(int s) {
+             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:61: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      public MCDataOutput writeInt(int i) {
+             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:71: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      public MCDataOutput writeLong(long l) {
+             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:81: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      public MCDataOutput writeFloat(float f) {
+             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:91: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      public MCDataOutput writeDouble(double d) {
+             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataOutputStream.java:101: warning: [removal] MCDataOutput in codechicken.lib.data has been deprecated and marked for removal
+      public MCDataOutput writeBoolean(boolean b) {
+             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCByteStream.java:12: warning: [removal] MCDataOutputStream in codechicken.lib.data has been deprecated and marked for removal
+  public class MCByteStream extends MCDataOutputStream {
+                                    ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/data/MCDataInputStream.java:18: warning: [removal] MCDataInput in codechicken.lib.data has been deprecated and marked for removal
+  public class MCDataInputStream implements MCDataInput {
+                                            ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:243: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+      public static boolean canInsertStack(IItemHandler handler, int slot, ItemStack stack) {
+                                           ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:244: warning: [removal] insertItem(int,ItemStack,boolean) in IItemHandler has been deprecated and marked for removal
+          return handler.insertItem(slot, stack, true) != stack;
+                        ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:247: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+      public static boolean canExtractStack(IItemHandler handler, int slot) {
+                                            ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:248: warning: [removal] getStackInSlot(int) in IItemHandler has been deprecated and marked for removal
+          ItemStack stack = handler.getStackInSlot(slot);
+                                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:250: warning: [removal] extractItem(int,int,boolean) in IItemHandler has been deprecated and marked for removal
+              return !handler.extractItem(slot, stack.getMaxStackSize(), true).isEmpty();
+                             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:255: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+      public static ItemStack insertItem(IItemHandler handler, ItemStack insert, boolean simulate) {
+                                         ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:258: warning: [removal] getSlots() in IItemHandler has been deprecated and marked for removal
+              for (int slot = 0; slot < handler.getSlots(); slot++) {
+                                               ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:259: warning: [removal] getStackInSlot(int) in IItemHandler has been deprecated and marked for removal
+                  ItemStack stack = handler.getStackInSlot(slot);
+                                           ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:266: warning: [removal] insertItem(int,ItemStack,boolean) in IItemHandler has been deprecated and marked for removal
+                  insert = handler.insertItem(slot, insert, simulate);
+                                  ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:282: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+      public static int countMatchingStacks(IItemHandler handler, ItemStack filter, boolean insert) {
+                                            ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:285: warning: [removal] getSlots() in IItemHandler has been deprecated and marked for removal
+          for (int slot = 0; slot < handler.getSlots(); slot++) {
+                                           ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:286: warning: [removal] getStackInSlot(int) in IItemHandler has been deprecated and marked for removal
+              ItemStack stack = handler.getStackInSlot(slot);
+                                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:294: warning: [removal] IItemHandler in net.neoforged.neoforge.items has been deprecated and marked for removal
+      public static int getInsertableQuantity(IItemHandler handler, ItemStack stack) {
+                                              ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:297: warning: [removal] getSlots() in IItemHandler has been deprecated and marked for removal
+          for (int slot = 0; slot < handler.getSlots(); slot++) {
+                                           ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/InventoryUtils.java:299: warning: [removal] insertItem(int,ItemStack,boolean) in IItemHandler has been deprecated and marked for removal
+                  ItemStack left = handler.insertItem(slot, copy, true);
+                                          ^
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:29: error: cannot find symbol
+  public class JEIPlugin implements IModPlugin {
+                                    ^
+    symbol: class IModPlugin
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:28: error: cannot find symbol
+  @JeiPlugin
+   ^
+    symbol: class JeiPlugin
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/render/CCCustomRenderState.java:21: error: cannot find symbol
+  ) implements GuiElementRenderState {
+               ^
+    symbol: class GuiElementRenderState
+  Note: Some input files use unchecked or unsafe operations.
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:127: error: package QuadCollection does not exist
+      public void getAsCulled(QuadCollection.Builder builder, Direction face) {
+                                            ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:136: error: package QuadCollection does not exist
+      public void getAsCulled(QuadCollection.Builder builder) {
+                                            ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/buffer/BakedQuadVertexBuilder.java:143: error: package QuadCollection does not exist
+      public void getAsUnculled(QuadCollection.Builder builder) {
+                                              ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:7: error: package mezz.jei.api does not exist
+  import mezz.jei.api.IModPlugin;
+                     ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:8: error: package mezz.jei.api does not exist
+  import mezz.jei.api.JeiPlugin;
+                     ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:9: error: package mezz.jei.api.constants does not exist
+  import mezz.jei.api.constants.VanillaTypes;
+                               ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:10: error: package mezz.jei.api.gui.handlers does not exist
+  import mezz.jei.api.gui.handlers.IGhostIngredientHandler;
+                                  ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:11: error: package mezz.jei.api.gui.handlers does not exist
+  import mezz.jei.api.gui.handlers.IGuiContainerHandler;
+                                  ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:12: error: package mezz.jei.api.ingredients does not exist
+  import mezz.jei.api.ingredients.ITypedIngredient;
+                                 ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:13: error: package mezz.jei.api.registration does not exist
+  import mezz.jei.api.registration.IGuiHandlerRegistration;
+                                  ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/internal/compat/JEIPlugin.java:81: error: package IGhostIngredientHandler does not exist
+      private record DropTarget<I>(GuiElement<?> element) implements IGhostIngredientHandler.Target<I> {
+                                                                                            ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/render/GuiGraphicsExtension.java:10: error: package net.minecraft.client.gui.render.state does not exist
+  import net.minecraft.client.gui.render.state.BlitRenderState;
+                                              ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/gui/render/CCCustomRenderState.java:7: error: package net.minecraft.client.gui.render.state does not exist
+  import net.minecraft.client.gui.render.state.GuiElementRenderState;
+                                              ^
+  100 errors
+  84 warnings
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to generate a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 3m 28s
+2 actionable tasks: 2 executed
+EXIT=1

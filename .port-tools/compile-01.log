@@ -1,0 +1,38 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/root/.gradle/wrapper/dists/gradle-8.8-bin/dl7vupf4psengwqhwktix4v1/gradle-8.8/lib/native-platform-0.22-milestone-26.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Starting a Gradle Daemon, 17 busy and 1 incompatible and 11 stopped Daemons could not be reused, use --status for details
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:processResources NO-SOURCE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/root/home/forks/build.gradle' line: 5
+
+* What went wrong:
+Plugin [id: 'net.neoforged.moddev', version: '7.1.38'] was not found in any of the following sources:
+
+- Gradle Core Plugins (plugin is not in 'org.gradle' namespace)
+- Included Builds (No included builds contain this plugin)
+- Plugin Repositories (could not resolve plugin artifact 'net.neoforged.moddev:net.neoforged.moddev.gradle.plugin:7.1.38')
+  Searched in the following repositories:
+    MavenLocal(file:/root/.m2/repository/)
+    Gradle Central Plugin Repository
+    maven(https://maven.neoforged.net/releases)
+    Modmaven(https://modmaven.dev)
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 29s
+1 actionable task: 1 up-to-date
+EXIT=1

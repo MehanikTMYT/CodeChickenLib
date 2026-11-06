@@ -6,6 +6,7 @@ import codechicken.lib.render.buffer.BakedQuadVertexBuilder;
 import codechicken.lib.render.buffer.ISpriteAwareVertexConsumer;
 import codechicken.lib.render.buffer.TransformingVertexConsumer;
 import codechicken.lib.render.lighting.LC;
+import net.minecraft.world.level.BlockAndLightGetter;
 import codechicken.lib.render.lighting.LightMatrix;
 import codechicken.lib.render.lighting.PlanarLightModel;
 import codechicken.lib.render.pipeline.CCRenderPipeline;
@@ -197,7 +198,7 @@ public class CCRenderState {
         colour = baseColour = alphaOverride = -1;
     }
 
-    public void preRenderWorld(BlockGetter world, BlockPos pos) {
+    public void preRenderWorld(BlockAndLightGetter world, BlockPos pos) {
         this.reset();
         this.colour = 0xFFFFFFFF;
         this.setBrightness(world, pos);
@@ -266,24 +267,23 @@ public class CCRenderState {
         List<VertexFormatElement> elements = fmt.getElements();
         for (VertexFormatElement fmte : elements) {
             switch (fmte.type()) {
-                case FLOAT -> r.addVertex((float) vert.vec.x, (float) vert.vec.y, (float) vert.vec.z);
                 case FLOAT -> {
                     switch (fmte.index()) {
-                        case 0 -> r.setUv((float) vert.uv.u, (float) vert.uv.v);
-                        case 1 -> r.setOverlay(overlay);
-                        case 2 -> r.setLight(brightness);
+                        case 0 -> r.addVertex((float) vert.vec.x, (float) vert.vec.y, (float) vert.vec.z);
+                        case 1 -> r.setUv((float) vert.uv.u, (float) vert.uv.v);
+                        case 2 -> r.setOverlay(overlay);
+                        case 3 -> r.setLight(brightness);
                         default -> throw new UnsupportedOperationException("Unknown UV index. " + fmte.index());
                     }
                 }
-                case UBYTE -> r.setColor(colour >>> 24, colour >> 16 & 0xFF, colour >> 8 & 0xFF, alphaOverride >= 0 ? alphaOverride : colour & 0xFF);
                 case BYTE -> r.setNormal((float) normal.x, (float) normal.y, (float) normal.z);
                 default -> throw new UnsupportedOperationException("Generic vertex format element");
             }
         }
     }
 
-    public void setBrightness(BlockGetter world, BlockPos pos) {
-        brightness = LevelRenderer.getLightColor(world, pos);
+    public void setBrightness(BlockAndLightGetter world, BlockPos pos) {
+        brightness = LevelRenderer.getLightCoords(world, pos);
     }
 
     public void setBrightness(Entity entity, float frameDelta) {
@@ -295,7 +295,7 @@ public class CCRenderState {
     }
 
     public void setFluidColour(FluidStack fluidStack, int alpha) {
-        this.baseColour = IClientFluidTypeExtensions.of(fluidStack.getFluid()).getTintColor(fluidStack) << 8 | alpha;
+        this.baseColour = 0xFFFFFF << 8 | alpha ; // PORT26: tint переедет
     }
 
     public void setColour(Colour colour) {

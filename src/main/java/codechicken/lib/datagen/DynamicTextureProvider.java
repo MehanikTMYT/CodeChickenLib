@@ -1,5 +1,7 @@
 package codechicken.lib.datagen;
 
+import codechicken.lib.gui.modular.lib.DynamicTextures;
+
 import com.google.common.hash.Hashing;
 import com.google.common.hash.HashingOutputStream;
 import net.minecraft.util.Util;

@@ -10,6 +10,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import org.apache.logging.log4j.LogManager;
@@ -67,7 +68,8 @@ public class ShapedRecipeBuilder extends AbstractItemStackRecipeBuilder<ShapedRe
     }
 
     public static ShapedRecipeBuilder builder(HolderGetter<Item> items, ItemStack result, Identifier id) {
-        return new ShapedRecipeBuilder(id, items, result, ShapedRecipe::new);
+        return new ShapedRecipeBuilder(id, items, result,
+                (g, cat, pat, res, notif) -> new ShapedRecipe(new Recipe.CommonInfo(notif), new CraftingRecipe.CraftingBookInfo(cat, g), pat, ItemStackTemplate.fromNonEmptyStack(res)));
     }
 
     // region Custom

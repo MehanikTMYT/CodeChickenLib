@@ -280,7 +280,7 @@ public class Quad {
                 vertices[2].packUV(),
                 vertices[3].packUV(),
                 requireNonNull(direction, "Direction not computed."),
-                new net.minecraft.client.resources.model.geometry.BakedQuad$MaterialInfo(requireNonNull(sprite, "Quad requires a sprite."), net.minecraft.client.renderer.chunk.ChunkSectionLayer.SOLID, net.minecraft.client.renderer.rendertype.RenderType.solid(), tintIndex, shade, lightEmission, ambientOcclusion),
+                net.minecraft.client.resources.model.geometry.BakedQuad.MaterialInfo.of(new net.minecraft.client.resources.model.sprite.Material.Baked(requireNonNull(sprite, "Quad requires a sprite."), false), com.mojang.blaze3d.platform.Transparency.NONE, tintIndex, shade, lightEmission, ambientOcclusion),
                 BakedNormals.of(
                         vertices[0].packNormal(),
                         vertices[1].packNormal(),

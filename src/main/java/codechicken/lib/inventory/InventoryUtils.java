@@ -88,7 +88,7 @@ public class InventoryUtils {
 
             var child = children.addChild();
             child.putInt("Slot", i);
-            child.store("Item", ItemStack.SINGLE_ITEM_CODEC, stack);
+            child.store("Item", ItemStack.CODEC, stack);
             child.putInt("Quantity", Math.min(stack.getCount(), maxQuantity));
         }
     }
@@ -100,7 +100,7 @@ public class InventoryUtils {
         var children = input.childrenListOrEmpty("Items");
         for (ValueInput child : children) {
             var slot = child.getInt("Slot").orElseThrow();
-            items[slot] = child.read("Item", ItemStack.SINGLE_ITEM_CODEC).orElse(ItemStack.EMPTY);
+            items[slot] = child.read("Item", ItemStack.CODEC).orElse(ItemStack.EMPTY);
             if (!items[slot].isEmpty()) {
                 items[slot].setCount(child.getInt("Quantity").orElseThrow());
             }
@@ -212,7 +212,7 @@ public class InventoryUtils {
      */
     public static void consumeItem(Container inv, int slot) {
         ItemStack stack = inv.getItem(slot);
-        ItemStack remaining = stack.getCraftingRemainder();
+        ItemStack remaining = stack.getCraftingRemainder().create();
         if (!remaining.isEmpty()) {
             inv.setItem(slot, remaining);
         } else {

@@ -28,10 +28,10 @@ public class DevCommands {
     private static int setupWorld(CommandContext<CommandSourceStack> ctx) {
         CommandSourceStack source = ctx.getSource();
         MinecraftServer server = source.getServer();
-        GameRules gameRules = server.getWorldData().getGameRules();
+        GameRules gameRules = server.getGameRules();
 
         for (ServerLevel level : server.getAllLevels()) {
-            level.setWeatherParameters(6000, 0, false, false);
+            level.getWeatherData().setClearWeatherTime(6000); level.getWeatherData().setRainTime(0); level.getWeatherData().setThunderTime(0); level.getWeatherData().setRaining(false); level.getWeatherData().setThundering(false);
         }
 
         gameRules.set(GameRules.ADVANCE_TIME, false, server);

@@ -1,0 +1,101 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/root/.gradle/wrapper/dists/gradle-9.2.1-bin/2t0n5ozlw9xmuyvbp7dnzaxug/gradle-9.2.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:40: error: statements not expected outside of methods and initializers
+        return smelting(items, result, 1);
+        ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:44: error: statements not expected outside of methods and initializers
+        return smelting(items, new ItemStack(result, count));
+        ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:45: error: class, interface, enum, or record expected
+    }
+    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:49: error: class, interface, enum, or record expected
+    }
+    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:53: error: class, interface, enum, or record expected
+    }
+    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:57: error: class, interface, enum, or record expected
+    }
+    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:61: error: class, interface, enum, or record expected
+    }
+    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:65: error: class, interface, enum, or record expected
+    }
+    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:70: error: class, interface, enum, or record expected
+    }
+    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:270: error: class, interface, enum, or record expected
+}
+^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:1: error: compact source file should not have package declaration
+package codechicken.lib.datagen.recipe;
+^
+11 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///root/home/forks/mi-stack/CodeChickenLib/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:1: error: compact source file should not have package declaration
+  package codechicken.lib.datagen.recipe;
+  ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:45: error: class, interface, enum, or record expected
+      }
+      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:49: error: class, interface, enum, or record expected
+      }
+      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:53: error: class, interface, enum, or record expected
+      }
+      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:57: error: class, interface, enum, or record expected
+      }
+      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:61: error: class, interface, enum, or record expected
+      }
+      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:65: error: class, interface, enum, or record expected
+      }
+      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:70: error: class, interface, enum, or record expected
+      }
+      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:270: error: class, interface, enum, or record expected
+  }
+  ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:40: error: statements not expected outside of methods and initializers
+          return smelting(items, result, 1);
+          ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/datagen/recipe/FurnaceRecipeBuilder.java:44: error: statements not expected outside of methods and initializers
+          return smelting(items, new ItemStack(result, count));
+          ^
+  11 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to generate a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 26s
+2 actionable tasks: 1 executed, 1 up-to-date

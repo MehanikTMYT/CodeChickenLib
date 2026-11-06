@@ -5,6 +5,7 @@ import codechicken.lib.vec.*;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.VertexFormat;
 import net.minecraft.client.Camera;
+import net.minecraft.resources.Identifier;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.rendertype.RenderType;
@@ -44,8 +45,10 @@ public class RenderUtils {
             bound.max.y = bound.min.y + (bound.max.y - bound.min.y) * capacity;
         }
         IClientFluidTypeExtensions props = IClientFluidTypeExtensions.of(type);
-        TextureAtlasSprite sprite = Minecraft.getInstance().getAtlasManager().get(ClientHooks.getBlockMaterial(props.getStillTexture(stack)));
-        ccrs.baseColour = props.getTintColor(stack) << 8 | alpha;
+        // PORT26 TODO: getStillTexture/getTintColor удалены из IClientFluidTypeExtensions в 26.x,
+        // ClientHooks.getBlockMaterial также удалён — до восстановления API жидкостей: missingno-спрайт и белый тинт.
+        TextureAtlasSprite sprite = Minecraft.getInstance().getAtlasManager().get(new net.minecraft.client.resources.model.sprite.SpriteId(Identifier.withDefaultNamespace("blocks"), Identifier.withDefaultNamespace("missingno")));
+        ccrs.baseColour = (0xFFFFFF << 8) | alpha;
         makeFluidModel(bound, sprite, res).render(ccrs, mat);
     }
 

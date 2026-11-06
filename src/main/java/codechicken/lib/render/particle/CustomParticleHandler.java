@@ -20,9 +20,9 @@ public class CustomParticleHandler {
     public static void addBlockHitEffects(Level world, Cuboid6 bounds, Direction side, TextureAtlasSprite icon, ParticleEngine particleManager) {
         float border = 0.1F;
         Vector3 diff = bounds.max.copy().subtract(bounds.min).add(-2 * border);
-        diff.x *= world.random.nextDouble();
-        diff.y *= world.random.nextDouble();
-        diff.z *= world.random.nextDouble();
+        diff.x *= world.getRandom().nextDouble();
+        diff.y *= world.getRandom().nextDouble();
+        diff.z *= world.getRandom().nextDouble();
         Vector3 pos = diff.add(bounds.min).add(border);
 
         if (side == Direction.DOWN) {
@@ -58,7 +58,7 @@ public class CustomParticleHandler {
                     double x = bounds.min.x + (i + 0.5) * diff.x / density.x;
                     double y = bounds.min.y + (j + 0.5) * diff.y / density.y;
                     double z = bounds.min.z + (k + 0.5) * diff.z / density.z;
-                    particleManager.add(new CustomBreakingParticle((ClientLevel) world, x, y, z, x - center.x, y - center.y, z - center.z, icons.get(world.random.nextInt(icons.size()))));
+                    particleManager.add(new CustomBreakingParticle((ClientLevel) world, x, y, z, x - center.x, y - center.y, z - center.z, icons.get(world.getRandom().nextInt(icons.size()))));
                 }
             }
         }

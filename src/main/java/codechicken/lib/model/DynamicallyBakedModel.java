@@ -1,6 +1,6 @@
 package codechicken.lib.model;
 
-import net.minecraft.client.renderer.block.model.BakedQuad;
+import net.minecraft.client.resources.model.geometry.BakedQuad;
 import net.minecraft.resources.Identifier;
 import net.minecraft.client.resources.model.geometry.BakedQuad;
 

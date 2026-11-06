@@ -50,7 +50,7 @@ public class ItemUtils {
      */
     public static void dropItem(ItemStack stack, Level level, Vector3 dropLocation) {
         ItemEntity item = new ItemEntity(level, dropLocation.x, dropLocation.y, dropLocation.z, stack);
-        item.setDeltaMovement(level.random.nextGaussian() * 0.05, level.random.nextGaussian() * 0.05 + 0.2F, level.random.nextGaussian() * 0.05);
+        item.setDeltaMovement(level.getRandom().nextGaussian() * 0.05, level.getRandom().nextGaussian() * 0.05 + 0.2F, level.getRandom().nextGaussian() * 0.05);
         level.addFreshEntity(item);
     }
 

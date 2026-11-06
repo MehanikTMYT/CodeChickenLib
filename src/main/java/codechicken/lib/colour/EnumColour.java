@@ -199,7 +199,7 @@ public enum EnumColour implements StringRepresentable {
     }
 
     public static @Nullable EnumColour fromDyeStack(ItemStack stack) {
-        return FastStream.of(stack.getTags())
+        return FastStream.of(net.minecraft.core.registries.BuiltInRegistries.ITEM.wrapAsHolder(stack.getItem()).tags())
                 .map(TagKey::location)
                 .map(dyeTagLookup::get)
                 .filter(Objects::nonNull)
@@ -207,7 +207,7 @@ public enum EnumColour implements StringRepresentable {
     }
 
     public static @Nullable EnumColour fromWoolStack(ItemStack stack) {
-        return FastStream.of(stack.getTags())
+        return FastStream.of(net.minecraft.core.registries.BuiltInRegistries.ITEM.wrapAsHolder(stack.getItem()).tags())
                 .map(TagKey::location)
                 .map(woolTagLookup::get)
                 .filter(Objects::nonNull)

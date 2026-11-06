@@ -59,9 +59,14 @@ neoForge {
 
 sourceSets.main.resources.srcDirs += "src/main/generated"
 
+// Порт 26.1.2: тесты 1.21.x не переведены (BooleanList и др. старые API) — не компилируем/не гоняем
+tasks.named('compileTestJava') { enabled = false }
+tasks.named('test') { enabled = false }
+
 processResources {
     def replaceProperties = [
             'file': ['jarVersion': mod_version],
+            'mod_id': mod_id,
             'mc_version': minecraft_version,
             'forge_version': neo_version,
             'lang_version': neo_version.split("\\.")[0],

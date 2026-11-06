@@ -7,7 +7,9 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.crafting.CraftingBookCategory;
+import net.minecraft.world.item.crafting.CraftingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.ShapelessRecipe;
@@ -63,7 +65,8 @@ public class ShapelessRecipeBuilder extends AbstractItemStackRecipeBuilder<Shape
     }
 
     public static ShapelessRecipeBuilder builder(HolderGetter<Item> items, ItemStack result, Identifier id) {
-        return new ShapelessRecipeBuilder(id, items, result, ShapelessRecipe::new);
+        return new ShapelessRecipeBuilder(id, items, result,
+                (g, cat, res, ing) -> new ShapelessRecipe(new Recipe.CommonInfo(true), new CraftingRecipe.CraftingBookInfo(cat, g), ItemStackTemplate.fromNonEmptyStack(res), ing));
     }
 
     // region Custom

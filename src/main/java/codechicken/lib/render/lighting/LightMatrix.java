@@ -1,6 +1,8 @@
 package codechicken.lib.render.lighting;
 
 import codechicken.lib.colour.ColourRGBA;
+import net.minecraft.world.level.BlockAndLightGetter;
+import net.minecraft.world.level.BlockGetter;
 import codechicken.lib.render.CCRenderState;
 import codechicken.lib.render.pipeline.IVertexOperation;
 import net.minecraft.client.Minecraft;
@@ -23,7 +25,7 @@ public class LightMatrix implements IVertexOperation {
     public float[][] ao = new float[13][4];
     public int[][] brightness = new int[13][4];
 
-    public @Nullable BlockGetter access;
+    public @Nullable BlockAndLightGetter access;
     public BlockPos pos = BlockPos.ZERO;
 
     private int sampled = 0;
@@ -84,7 +86,7 @@ public class LightMatrix implements IVertexOperation {
         System.out.println(Arrays.deepToString(ssamplem));
     }*/
 
-    public void locate(BlockGetter a, BlockPos bPos) {
+    public void locate(BlockAndLightGetter a, BlockPos bPos) {
         access = a;
         pos = bPos;
         computed = 0;
@@ -96,7 +98,7 @@ public class LightMatrix implements IVertexOperation {
         if ((sampled & 1 << i) == 0) {
             BlockPos bp = new BlockPos(pos.getX() + (i % 3) - 1, pos.getY() + (i / 9) - 1, pos.getZ() + (i / 3 % 3) - 1);
             BlockState b = access.getBlockState(bp);
-            bSamples[i] = LevelRenderer.getLightColor(access, bp);
+            bSamples[i] = LevelRenderer.getLightCoords(access, bp);
             aSamples[i] = b.getShadeBrightness(access, bp);
             sampled |= 1 << i;
         }

@@ -12,6 +12,7 @@ import net.neoforged.neoforge.client.event.AddClientReloadListenersEvent;
 import net.neoforged.neoforge.client.event.RegisterRenderPipelinesEvent;
 
 import static codechicken.lib.CodeChickenLib.MOD_ID;
+import codechicken.lib.inventory.container.modular.CursorHelper;
 
 /**
  * Created by covers1624 on 8/9/23.

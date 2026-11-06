@@ -1,0 +1,962 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/root/.gradle/wrapper/dists/gradle-9.2.1-bin/2t0n5ozlw9xmuyvbp7dnzaxug/gradle-9.2.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :processResources
+> Task :classes
+> Task :jarJar NO-SOURCE
+> Task :jar
+
+> Task :javadoc
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:3: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+import codechicken.lib.packet.ICustomPacketHandler.IClientConfigurationPacketHandler;
+                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:4: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+import codechicken.lib.packet.ICustomPacketHandler.IClientPacketHandler;
+                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:5: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+import codechicken.lib.packet.ICustomPacketHandler.IServerConfigurationPacketHandler;
+                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/PacketCustomChannel.java:6: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+import codechicken.lib.packet.ICustomPacketHandler.IServerPacketHandler;
+                             ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/packet/SimpleClientPacketHandler.java:10: warning: [removal] ICustomPacketHandler in codechicken.lib.packet has been deprecated and marked for removal
+import static codechicken.lib.packet.ICustomPacketHandler.IClientPacketHandler;
+                                    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/render/CCRenderState.java:48: warning: reference not found: BakedVertexSource
+ * Piping Vanilla {@link BakedQuad} instances through here possible via {@link BakedVertexSource}.
+                                                                        ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularGuiContainerMenu.java:49: warning: reference not found: GuiSlots
+     * You will need to pass these to appropriate {@link GuiSlots} / {@link GuiSlots#singleSlot(GuiParent, ContainerScreenAccess, SlotGroup, int)} elements.
+                                                  ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularGuiContainerMenu.java:49: warning: reference not found: GuiSlots#singleSlot(GuiParent, ContainerScreenAccess, SlotGroup, int)
+     * You will need to pass these to appropriate {@link GuiSlots} / {@link GuiSlots#singleSlot(GuiParent, ContainerScreenAccess, SlotGroup, int)} elements.
+                                                                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/main/java/codechicken/lib/inventory/container/modular/ModularGuiContainerMenu.java:54: warning: reference not found: GuiSlots#singleSlot(GuiParent, ContainerScreenAccess, SlotGroup, int)
+     * you can still add all the slots to a single group, then pass each individual slot from the group to a single {@link GuiSlots#singleSlot(GuiParent, ContainerScreenAccess, SlotGroup, int)} element.
+                                                                                                                    ^
+9 warnings
+
+> Task :javadocJar
+> Task :sourcesJar
+> Task :assemble
+
+> Task :compileTestJava
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:3: error: package it.unimi.dsi.fastutil.booleans does not exist
+import it.unimi.dsi.fastutil.booleans.BooleanArrayList;
+                                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:4: error: package it.unimi.dsi.fastutil.booleans does not exist
+import it.unimi.dsi.fastutil.booleans.BooleanList;
+                                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:5: error: package it.unimi.dsi.fastutil.doubles does not exist
+import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
+                                    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:6: error: package it.unimi.dsi.fastutil.doubles does not exist
+import it.unimi.dsi.fastutil.doubles.DoubleList;
+                                    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:7: error: package it.unimi.dsi.fastutil.ints does not exist
+import it.unimi.dsi.fastutil.ints.IntArrayList;
+                                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:8: error: package it.unimi.dsi.fastutil.ints does not exist
+import it.unimi.dsi.fastutil.ints.IntList;
+                                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:9: error: package it.unimi.dsi.fastutil.longs does not exist
+import it.unimi.dsi.fastutil.longs.LongArrayList;
+                                  ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:10: error: package it.unimi.dsi.fastutil.longs does not exist
+import it.unimi.dsi.fastutil.longs.LongList;
+                                  ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:158: error: cannot find symbol
+    private static BooleanList generateRandomBooleans(Random rand) {
+                   ^
+  symbol:   class BooleanList
+  location: class ConfigRoundTripTest
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:184: error: cannot find symbol
+    private static IntList generateRandomInts(Random rand) {
+                   ^
+  symbol:   class IntList
+  location: class ConfigRoundTripTest
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:192: error: cannot find symbol
+    private static LongList generateRandomLongs(Random rand) {
+                   ^
+  symbol:   class LongList
+  location: class ConfigRoundTripTest
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:200: error: cannot find symbol
+    private static DoubleList generateRandomDoubles(Random rand) {
+                   ^
+  symbol:   class DoubleList
+  location: class ConfigRoundTripTest
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:7: error: package io.netty.buffer does not exist
+import io.netty.buffer.ByteBuf;
+                      ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:8: error: package io.netty.buffer does not exist
+import io.netty.buffer.Unpooled;
+                      ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:9: error: package it.unimi.dsi.fastutil.booleans does not exist
+import it.unimi.dsi.fastutil.booleans.BooleanArrayList;
+                                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:10: error: package it.unimi.dsi.fastutil.booleans does not exist
+import it.unimi.dsi.fastutil.booleans.BooleanList;
+                                     ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:11: error: package it.unimi.dsi.fastutil.doubles does not exist
+import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
+                                    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:12: error: package it.unimi.dsi.fastutil.doubles does not exist
+import it.unimi.dsi.fastutil.doubles.DoubleList;
+                                    ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:13: error: package it.unimi.dsi.fastutil.ints does not exist
+import it.unimi.dsi.fastutil.ints.IntArrayList;
+                                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:14: error: package it.unimi.dsi.fastutil.ints does not exist
+import it.unimi.dsi.fastutil.ints.IntList;
+                                 ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:15: error: package it.unimi.dsi.fastutil.longs does not exist
+import it.unimi.dsi.fastutil.longs.LongArrayList;
+                                  ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:16: error: package it.unimi.dsi.fastutil.longs does not exist
+import it.unimi.dsi.fastutil.longs.LongList;
+                                  ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:17: error: package net.minecraft.network does not exist
+import net.minecraft.network.FriendlyByteBuf;
+                            ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigFileTests.java:4: error: package org.apache.commons.lang3 does not exist
+import org.apache.commons.lang3.NotImplementedException;
+                               ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:4: error: package net.minecraft.resources does not exist
+import net.minecraft.resources.Identifier;
+                              ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:5: error: package net.minecraft.server.packs.resources does not exist
+import net.minecraft.server.packs.resources.Resource;
+                                           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:6: error: package net.minecraft.server.packs.resources does not exist
+import net.minecraft.server.packs.resources.ResourceProvider;
+                                           ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:16: error: cannot find symbol
+public class TestResourceProvider implements ResourceProvider {
+                                             ^
+  symbol: class ResourceProvider
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:24: error: cannot find symbol
+    public Optional<Resource> getResource(Identifier resource) {
+                                          ^
+  symbol:   class Identifier
+  location: class TestResourceProvider
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:24: error: cannot find symbol
+    public Optional<Resource> getResource(Identifier resource) {
+                    ^
+  symbol:   class Resource
+  location: class TestResourceProvider
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/render/model/MatLibTests.java:5: error: package net.minecraft.resources does not exist
+import net.minecraft.resources.Identifier;
+                              ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/render/model/OBJParserTests.java:5: error: package com.mojang.blaze3d.vertex does not exist
+import com.mojang.blaze3d.vertex.VertexFormat;
+                                ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/render/model/OBJParserTests.java:6: error: package net.minecraft.resources does not exist
+import net.minecraft.resources.Identifier;
+                              ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/package-info.java:9: error: package javax.annotation does not exist
+import javax.annotation.ParametersAreNonnullByDefault;
+                       ^
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/package-info.java:2: error: cannot find symbol
+@ParametersAreNonnullByDefault
+ ^
+  symbol: class ParametersAreNonnullByDefault
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:163: error: cannot find symbol
+        return new BooleanArrayList(booleans);
+                   ^
+  symbol:   class BooleanArrayList
+  location: class ConfigRoundTripTest
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:189: error: cannot find symbol
+        return new IntArrayList(ints);
+                   ^
+  symbol:   class IntArrayList
+  location: class ConfigRoundTripTest
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:197: error: cannot find symbol
+        return new LongArrayList(longs);
+                   ^
+  symbol:   class LongArrayList
+  location: class ConfigRoundTripTest
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:205: error: cannot find symbol
+        return new DoubleArrayList(doubles);
+                   ^
+  symbol:   class DoubleArrayList
+  location: class ConfigRoundTripTest
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:252: error: cannot find symbol
+        BooleanList bList = new BooleanArrayList(List.of(true, false));
+        ^
+  symbol:   class BooleanList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:252: error: cannot find symbol
+        BooleanList bList = new BooleanArrayList(List.of(true, false));
+                                ^
+  symbol:   class BooleanArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:274: error: cannot find symbol
+        IntList iList = new IntArrayList(List.of(22, 222));
+        ^
+  symbol:   class IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:274: error: cannot find symbol
+        IntList iList = new IntArrayList(List.of(22, 222));
+                            ^
+  symbol:   class IntArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:285: error: cannot find symbol
+        LongList lList = new LongArrayList(List.of(44L, 444L));
+        ^
+  symbol:   class LongList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:285: error: cannot find symbol
+        LongList lList = new LongArrayList(List.of(44L, 444L));
+                             ^
+  symbol:   class LongArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:296: error: cannot find symbol
+        IntList hList = new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00));
+        ^
+  symbol:   class IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:296: error: cannot find symbol
+        IntList hList = new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00));
+                            ^
+  symbol:   class IntArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:307: error: cannot find symbol
+        DoubleList dList = new DoubleArrayList(List.of(4.20, 6.9));
+        ^
+  symbol:   class DoubleList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:307: error: cannot find symbol
+        DoubleList dList = new DoubleArrayList(List.of(4.20, 6.9));
+                               ^
+  symbol:   class DoubleArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:376: error: cannot find symbol
+        BooleanList bList = new BooleanArrayList(List.of(true, false));
+        ^
+  symbol:   class BooleanList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:376: error: cannot find symbol
+        BooleanList bList = new BooleanArrayList(List.of(true, false));
+                                ^
+  symbol:   class BooleanArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:394: error: cannot find symbol
+        IntList iList = new IntArrayList(List.of(22, 222));
+        ^
+  symbol:   class IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:394: error: cannot find symbol
+        IntList iList = new IntArrayList(List.of(22, 222));
+                            ^
+  symbol:   class IntArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:403: error: cannot find symbol
+        LongList lList = new LongArrayList(List.of(44L, 444L));
+        ^
+  symbol:   class LongList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:403: error: cannot find symbol
+        LongList lList = new LongArrayList(List.of(44L, 444L));
+                             ^
+  symbol:   class LongArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:412: error: cannot find symbol
+        IntList hList = new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00));
+        ^
+  symbol:   class IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:412: error: cannot find symbol
+        IntList hList = new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00));
+                            ^
+  symbol:   class IntArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:421: error: cannot find symbol
+        DoubleList dList = new DoubleArrayList(List.of(4.20, 6.9));
+        ^
+  symbol:   class DoubleList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:421: error: cannot find symbol
+        DoubleList dList = new DoubleArrayList(List.of(4.20, 6.9));
+                               ^
+  symbol:   class DoubleArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:595: error: cannot find symbol
+        assertTrue(r.test(ConfigValueListImpl.proxy(IntList.of(10), ValueType.INT)).isEmpty());
+                                                    ^
+  symbol:   variable IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:596: error: cannot find symbol
+        assertFailure(2, 3, r.test(ConfigValueListImpl.proxy(IntList.of(5, 9, 3, 10), ValueType.INT)));
+                                                             ^
+  symbol:   variable IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:597: error: cannot find symbol
+        assertTrue(r.test(ConfigValueListImpl.proxy(IntList.of(20), ValueType.INT)).isEmpty());
+                                                    ^
+  symbol:   variable IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:602: error: cannot find symbol
+        assertTrue(r.test(ConfigValueListImpl.proxy(DoubleList.of(4.20), ValueType.DOUBLE)).isEmpty());
+                                                    ^
+  symbol:   variable DoubleList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:603: error: cannot find symbol
+        assertFailure(2, 3.3D, r.test(ConfigValueListImpl.proxy(DoubleList.of(4.2, 6.9, 3.3, 5.5), ValueType.DOUBLE)));
+                                                                ^
+  symbol:   variable DoubleList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:604: error: cannot find symbol
+        assertTrue(r.test(ConfigValueListImpl.proxy(DoubleList.of(6.9), ValueType.DOUBLE)).isEmpty());
+                                                    ^
+  symbol:   variable DoubleList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:610: error: cannot find symbol
+                        .setDefaultInts(IntList.of(3000))
+                                        ^
+  symbol:   variable IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:619: error: cannot find symbol
+                        .setDefaultInts(IntList.of(3000))
+                                        ^
+  symbol:   variable IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:636: error: cannot find symbol
+                .setDefaultInts(IntList.of(20, 10))
+                                ^
+  symbol:   variable IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:637: error: cannot find symbol
+                .setInts(IntList.of(10, 20))
+                         ^
+  symbol:   variable IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:639: error: cannot find symbol
+        assertEquals(IntList.of(10, 20), val.getInts());
+                     ^
+  symbol:   variable IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:641: error: cannot find symbol
+        assertEquals(IntList.of(20, 10), val.getInts());
+                     ^
+  symbol:   variable IntList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:712: error: cannot find symbol
+        assertIdentityListConversion(new BooleanArrayList(List.of(true, false)), ValueType.BOOLEAN);
+                                         ^
+  symbol:   class BooleanArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:714: error: cannot find symbol
+        assertIdentityListConversion(new IntArrayList(List.of(22, 222)), ValueType.INT);
+                                         ^
+  symbol:   class IntArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:715: error: cannot find symbol
+        assertIdentityListConversion(new LongArrayList(List.of(44L, 444L)), ValueType.LONG);
+                                         ^
+  symbol:   class LongArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:716: error: cannot find symbol
+        assertIdentityListConversion(new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00)), ValueType.HEX);
+                                         ^
+  symbol:   class IntArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:717: error: cannot find symbol
+        assertIdentityListConversion(new DoubleArrayList(List.of(4.20D, 6.9D)), ValueType.DOUBLE);
+                                         ^
+  symbol:   class DoubleArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:922: error: cannot find symbol
+        listCat.getValueList("list1").setBooleans(new BooleanArrayList(List.of(true, false)));
+                                                      ^
+  symbol:   class BooleanArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:924: error: cannot find symbol
+        listCat.getValueList("list3").setInts(new IntArrayList(List.of(22, 222)));
+                                                  ^
+  symbol:   class IntArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:925: error: cannot find symbol
+        listCat.getValueList("list4").setLongs(new LongArrayList(List.of(44L, 444L)));
+                                                   ^
+  symbol:   class LongArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:926: error: cannot find symbol
+        listCat.getValueList("list5").setHexs(new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00)));
+                                                  ^
+  symbol:   class IntArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:927: error: cannot find symbol
+        listCat.getValueList("list6").setDoubles(new DoubleArrayList(List.of(4.20, 6.9)));
+                                                     ^
+  symbol:   class DoubleArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:934: error: cannot find symbol
+        ByteBuf buffer = Unpooled.buffer();
+        ^
+  symbol:   class ByteBuf
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:934: error: cannot find symbol
+        ByteBuf buffer = Unpooled.buffer();
+                         ^
+  symbol:   variable Unpooled
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:935: error: cannot find symbol
+        FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+        ^
+  symbol:   class FriendlyByteBuf
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:935: error: cannot find symbol
+        FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+                                  ^
+  symbol:   class FriendlyByteBuf
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1046: error: cannot find symbol
+        ByteBuf buffer = Unpooled.buffer();
+        ^
+  symbol:   class ByteBuf
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1046: error: cannot find symbol
+        ByteBuf buffer = Unpooled.buffer();
+                         ^
+  symbol:   variable Unpooled
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1047: error: cannot find symbol
+        FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+        ^
+  symbol:   class FriendlyByteBuf
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1047: error: cannot find symbol
+        FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+                                  ^
+  symbol:   class FriendlyByteBuf
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1077: error: cannot find symbol
+        ByteBuf buffer = Unpooled.buffer();
+        ^
+  symbol:   class ByteBuf
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1077: error: cannot find symbol
+        ByteBuf buffer = Unpooled.buffer();
+                         ^
+  symbol:   variable Unpooled
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1078: error: cannot find symbol
+        FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+        ^
+  symbol:   class FriendlyByteBuf
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1078: error: cannot find symbol
+        FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+                                  ^
+  symbol:   class FriendlyByteBuf
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1122: error: cannot find symbol
+        listCat.getValueList("list1").setBooleans(new BooleanArrayList(List.of(true, false)));
+                                                      ^
+  symbol:   class BooleanArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1124: error: cannot find symbol
+        listCat.getValueList("list3").setInts(new IntArrayList(List.of(22, 222)));
+                                                  ^
+  symbol:   class IntArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1125: error: cannot find symbol
+        listCat.getValueList("list4").setLongs(new LongArrayList(List.of(44L, 444L)));
+                                                   ^
+  symbol:   class LongArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1126: error: cannot find symbol
+        listCat.getValueList("list5").setHexs(new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00)));
+                                                  ^
+  symbol:   class IntArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1127: error: cannot find symbol
+        listCat.getValueList("list6").setDoubles(new DoubleArrayList(List.of(4.20, 6.9)));
+                                                     ^
+  symbol:   class DoubleArrayList
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1129: error: cannot find symbol
+        FriendlyByteBuf buf = new FriendlyByteBuf(Unpooled.buffer());
+        ^
+  symbol:   class FriendlyByteBuf
+  location: class ConfigV3Tests
+/root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1129: error: cannot find symbol
+        FriendlyByteBuf buf = new FriendlyByteBuf(Unpooled.buffer());
+                                  ^
+  symbol:   class FriendlyByteBuf
+  location: class ConfigV3Tests
+100 errors
+
+> Task :compileTestJava FAILED
+
+[Incubating] Problems report is available at: file:///root/home/forks/mi-stack/CodeChickenLib/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestJava'.
+> Compilation failed; see the compiler output below.
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:158: error: cannot find symbol
+      private static BooleanList generateRandomBooleans(Random rand) {
+                     ^
+    symbol:   class BooleanList
+    location: class ConfigRoundTripTest
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:184: error: cannot find symbol
+      private static IntList generateRandomInts(Random rand) {
+                     ^
+    symbol:   class IntList
+    location: class ConfigRoundTripTest
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:192: error: cannot find symbol
+      private static LongList generateRandomLongs(Random rand) {
+                     ^
+    symbol:   class LongList
+    location: class ConfigRoundTripTest
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:200: error: cannot find symbol
+      private static DoubleList generateRandomDoubles(Random rand) {
+                     ^
+    symbol:   class DoubleList
+    location: class ConfigRoundTripTest
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:24: error: cannot find symbol
+      public Optional<Resource> getResource(Identifier resource) {
+                                            ^
+    symbol:   class Identifier
+    location: class TestResourceProvider
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:24: error: cannot find symbol
+      public Optional<Resource> getResource(Identifier resource) {
+                      ^
+    symbol:   class Resource
+    location: class TestResourceProvider
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:163: error: cannot find symbol
+          return new BooleanArrayList(booleans);
+                     ^
+    symbol:   class BooleanArrayList
+    location: class ConfigRoundTripTest
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:189: error: cannot find symbol
+          return new IntArrayList(ints);
+                     ^
+    symbol:   class IntArrayList
+    location: class ConfigRoundTripTest
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:197: error: cannot find symbol
+          return new LongArrayList(longs);
+                     ^
+    symbol:   class LongArrayList
+    location: class ConfigRoundTripTest
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:205: error: cannot find symbol
+          return new DoubleArrayList(doubles);
+                     ^
+    symbol:   class DoubleArrayList
+    location: class ConfigRoundTripTest
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:252: error: cannot find symbol
+          BooleanList bList = new BooleanArrayList(List.of(true, false));
+          ^
+    symbol:   class BooleanList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:252: error: cannot find symbol
+          BooleanList bList = new BooleanArrayList(List.of(true, false));
+                                  ^
+    symbol:   class BooleanArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:274: error: cannot find symbol
+          IntList iList = new IntArrayList(List.of(22, 222));
+          ^
+    symbol:   class IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:274: error: cannot find symbol
+          IntList iList = new IntArrayList(List.of(22, 222));
+                              ^
+    symbol:   class IntArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:285: error: cannot find symbol
+          LongList lList = new LongArrayList(List.of(44L, 444L));
+          ^
+    symbol:   class LongList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:285: error: cannot find symbol
+          LongList lList = new LongArrayList(List.of(44L, 444L));
+                               ^
+    symbol:   class LongArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:296: error: cannot find symbol
+          IntList hList = new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00));
+          ^
+    symbol:   class IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:296: error: cannot find symbol
+          IntList hList = new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00));
+                              ^
+    symbol:   class IntArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:307: error: cannot find symbol
+          DoubleList dList = new DoubleArrayList(List.of(4.20, 6.9));
+          ^
+    symbol:   class DoubleList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:307: error: cannot find symbol
+          DoubleList dList = new DoubleArrayList(List.of(4.20, 6.9));
+                                 ^
+    symbol:   class DoubleArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:376: error: cannot find symbol
+          BooleanList bList = new BooleanArrayList(List.of(true, false));
+          ^
+    symbol:   class BooleanList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:376: error: cannot find symbol
+          BooleanList bList = new BooleanArrayList(List.of(true, false));
+                                  ^
+    symbol:   class BooleanArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:394: error: cannot find symbol
+          IntList iList = new IntArrayList(List.of(22, 222));
+          ^
+    symbol:   class IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:394: error: cannot find symbol
+          IntList iList = new IntArrayList(List.of(22, 222));
+                              ^
+    symbol:   class IntArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:403: error: cannot find symbol
+          LongList lList = new LongArrayList(List.of(44L, 444L));
+          ^
+    symbol:   class LongList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:403: error: cannot find symbol
+          LongList lList = new LongArrayList(List.of(44L, 444L));
+                               ^
+    symbol:   class LongArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:412: error: cannot find symbol
+          IntList hList = new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00));
+          ^
+    symbol:   class IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:412: error: cannot find symbol
+          IntList hList = new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00));
+                              ^
+    symbol:   class IntArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:421: error: cannot find symbol
+          DoubleList dList = new DoubleArrayList(List.of(4.20, 6.9));
+          ^
+    symbol:   class DoubleList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:421: error: cannot find symbol
+          DoubleList dList = new DoubleArrayList(List.of(4.20, 6.9));
+                                 ^
+    symbol:   class DoubleArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:595: error: cannot find symbol
+          assertTrue(r.test(ConfigValueListImpl.proxy(IntList.of(10), ValueType.INT)).isEmpty());
+                                                      ^
+    symbol:   variable IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:596: error: cannot find symbol
+          assertFailure(2, 3, r.test(ConfigValueListImpl.proxy(IntList.of(5, 9, 3, 10), ValueType.INT)));
+                                                               ^
+    symbol:   variable IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:597: error: cannot find symbol
+          assertTrue(r.test(ConfigValueListImpl.proxy(IntList.of(20), ValueType.INT)).isEmpty());
+                                                      ^
+    symbol:   variable IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:602: error: cannot find symbol
+          assertTrue(r.test(ConfigValueListImpl.proxy(DoubleList.of(4.20), ValueType.DOUBLE)).isEmpty());
+                                                      ^
+    symbol:   variable DoubleList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:603: error: cannot find symbol
+          assertFailure(2, 3.3D, r.test(ConfigValueListImpl.proxy(DoubleList.of(4.2, 6.9, 3.3, 5.5), ValueType.DOUBLE)));
+                                                                  ^
+    symbol:   variable DoubleList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:604: error: cannot find symbol
+          assertTrue(r.test(ConfigValueListImpl.proxy(DoubleList.of(6.9), ValueType.DOUBLE)).isEmpty());
+                                                      ^
+    symbol:   variable DoubleList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:610: error: cannot find symbol
+                          .setDefaultInts(IntList.of(3000))
+                                          ^
+    symbol:   variable IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:619: error: cannot find symbol
+                          .setDefaultInts(IntList.of(3000))
+                                          ^
+    symbol:   variable IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:636: error: cannot find symbol
+                  .setDefaultInts(IntList.of(20, 10))
+                                  ^
+    symbol:   variable IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:637: error: cannot find symbol
+                  .setInts(IntList.of(10, 20))
+                           ^
+    symbol:   variable IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:639: error: cannot find symbol
+          assertEquals(IntList.of(10, 20), val.getInts());
+                       ^
+    symbol:   variable IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:641: error: cannot find symbol
+          assertEquals(IntList.of(20, 10), val.getInts());
+                       ^
+    symbol:   variable IntList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:712: error: cannot find symbol
+          assertIdentityListConversion(new BooleanArrayList(List.of(true, false)), ValueType.BOOLEAN);
+                                           ^
+    symbol:   class BooleanArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:714: error: cannot find symbol
+          assertIdentityListConversion(new IntArrayList(List.of(22, 222)), ValueType.INT);
+                                           ^
+    symbol:   class IntArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:715: error: cannot find symbol
+          assertIdentityListConversion(new LongArrayList(List.of(44L, 444L)), ValueType.LONG);
+                                           ^
+    symbol:   class LongArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:716: error: cannot find symbol
+          assertIdentityListConversion(new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00)), ValueType.HEX);
+                                           ^
+    symbol:   class IntArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:717: error: cannot find symbol
+          assertIdentityListConversion(new DoubleArrayList(List.of(4.20D, 6.9D)), ValueType.DOUBLE);
+                                           ^
+    symbol:   class DoubleArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:922: error: cannot find symbol
+          listCat.getValueList("list1").setBooleans(new BooleanArrayList(List.of(true, false)));
+                                                        ^
+    symbol:   class BooleanArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:924: error: cannot find symbol
+          listCat.getValueList("list3").setInts(new IntArrayList(List.of(22, 222)));
+                                                    ^
+    symbol:   class IntArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:925: error: cannot find symbol
+          listCat.getValueList("list4").setLongs(new LongArrayList(List.of(44L, 444L)));
+                                                     ^
+    symbol:   class LongArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:926: error: cannot find symbol
+          listCat.getValueList("list5").setHexs(new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00)));
+                                                    ^
+    symbol:   class IntArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:927: error: cannot find symbol
+          listCat.getValueList("list6").setDoubles(new DoubleArrayList(List.of(4.20, 6.9)));
+                                                       ^
+    symbol:   class DoubleArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:934: error: cannot find symbol
+          ByteBuf buffer = Unpooled.buffer();
+          ^
+    symbol:   class ByteBuf
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:934: error: cannot find symbol
+          ByteBuf buffer = Unpooled.buffer();
+                           ^
+    symbol:   variable Unpooled
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:935: error: cannot find symbol
+          FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+          ^
+    symbol:   class FriendlyByteBuf
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:935: error: cannot find symbol
+          FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+                                    ^
+    symbol:   class FriendlyByteBuf
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1046: error: cannot find symbol
+          ByteBuf buffer = Unpooled.buffer();
+          ^
+    symbol:   class ByteBuf
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1046: error: cannot find symbol
+          ByteBuf buffer = Unpooled.buffer();
+                           ^
+    symbol:   variable Unpooled
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1047: error: cannot find symbol
+          FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+          ^
+    symbol:   class FriendlyByteBuf
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1047: error: cannot find symbol
+          FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+                                    ^
+    symbol:   class FriendlyByteBuf
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1077: error: cannot find symbol
+          ByteBuf buffer = Unpooled.buffer();
+          ^
+    symbol:   class ByteBuf
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1077: error: cannot find symbol
+          ByteBuf buffer = Unpooled.buffer();
+                           ^
+    symbol:   variable Unpooled
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1078: error: cannot find symbol
+          FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+          ^
+    symbol:   class FriendlyByteBuf
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1078: error: cannot find symbol
+          FriendlyByteBuf buf = new FriendlyByteBuf(buffer);
+                                    ^
+    symbol:   class FriendlyByteBuf
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1122: error: cannot find symbol
+          listCat.getValueList("list1").setBooleans(new BooleanArrayList(List.of(true, false)));
+                                                        ^
+    symbol:   class BooleanArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1124: error: cannot find symbol
+          listCat.getValueList("list3").setInts(new IntArrayList(List.of(22, 222)));
+                                                    ^
+    symbol:   class IntArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1125: error: cannot find symbol
+          listCat.getValueList("list4").setLongs(new LongArrayList(List.of(44L, 444L)));
+                                                     ^
+    symbol:   class LongArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1126: error: cannot find symbol
+          listCat.getValueList("list5").setHexs(new IntArrayList(List.of(0xFFFFFFFF, 0xFF00FF00)));
+                                                    ^
+    symbol:   class IntArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1127: error: cannot find symbol
+          listCat.getValueList("list6").setDoubles(new DoubleArrayList(List.of(4.20, 6.9)));
+                                                       ^
+    symbol:   class DoubleArrayList
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1129: error: cannot find symbol
+          FriendlyByteBuf buf = new FriendlyByteBuf(Unpooled.buffer());
+          ^
+    symbol:   class FriendlyByteBuf
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:1129: error: cannot find symbol
+          FriendlyByteBuf buf = new FriendlyByteBuf(Unpooled.buffer());
+                                    ^
+    symbol:   class FriendlyByteBuf
+    location: class ConfigV3Tests
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:16: error: cannot find symbol
+  public class TestResourceProvider implements ResourceProvider {
+                                               ^
+    symbol: class ResourceProvider
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/package-info.java:2: error: cannot find symbol
+  @ParametersAreNonnullByDefault
+   ^
+    symbol: class ParametersAreNonnullByDefault
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:3: error: package it.unimi.dsi.fastutil.booleans does not exist
+  import it.unimi.dsi.fastutil.booleans.BooleanArrayList;
+                                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:4: error: package it.unimi.dsi.fastutil.booleans does not exist
+  import it.unimi.dsi.fastutil.booleans.BooleanList;
+                                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:5: error: package it.unimi.dsi.fastutil.doubles does not exist
+  import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
+                                      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:6: error: package it.unimi.dsi.fastutil.doubles does not exist
+  import it.unimi.dsi.fastutil.doubles.DoubleList;
+                                      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:7: error: package it.unimi.dsi.fastutil.ints does not exist
+  import it.unimi.dsi.fastutil.ints.IntArrayList;
+                                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:8: error: package it.unimi.dsi.fastutil.ints does not exist
+  import it.unimi.dsi.fastutil.ints.IntList;
+                                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:9: error: package it.unimi.dsi.fastutil.longs does not exist
+  import it.unimi.dsi.fastutil.longs.LongArrayList;
+                                    ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigRoundTripTest.java:10: error: package it.unimi.dsi.fastutil.longs does not exist
+  import it.unimi.dsi.fastutil.longs.LongList;
+                                    ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:7: error: package io.netty.buffer does not exist
+  import io.netty.buffer.ByteBuf;
+                        ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:8: error: package io.netty.buffer does not exist
+  import io.netty.buffer.Unpooled;
+                        ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:9: error: package it.unimi.dsi.fastutil.booleans does not exist
+  import it.unimi.dsi.fastutil.booleans.BooleanArrayList;
+                                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:10: error: package it.unimi.dsi.fastutil.booleans does not exist
+  import it.unimi.dsi.fastutil.booleans.BooleanList;
+                                       ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:11: error: package it.unimi.dsi.fastutil.doubles does not exist
+  import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
+                                      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:12: error: package it.unimi.dsi.fastutil.doubles does not exist
+  import it.unimi.dsi.fastutil.doubles.DoubleList;
+                                      ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:13: error: package it.unimi.dsi.fastutil.ints does not exist
+  import it.unimi.dsi.fastutil.ints.IntArrayList;
+                                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:14: error: package it.unimi.dsi.fastutil.ints does not exist
+  import it.unimi.dsi.fastutil.ints.IntList;
+                                   ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:15: error: package it.unimi.dsi.fastutil.longs does not exist
+  import it.unimi.dsi.fastutil.longs.LongArrayList;
+                                    ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:16: error: package it.unimi.dsi.fastutil.longs does not exist
+  import it.unimi.dsi.fastutil.longs.LongList;
+                                    ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigV3Tests.java:17: error: package net.minecraft.network does not exist
+  import net.minecraft.network.FriendlyByteBuf;
+                              ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/config/ConfigFileTests.java:4: error: package org.apache.commons.lang3 does not exist
+  import org.apache.commons.lang3.NotImplementedException;
+                                 ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:4: error: package net.minecraft.resources does not exist
+  import net.minecraft.resources.Identifier;
+                                ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:5: error: package net.minecraft.server.packs.resources does not exist
+  import net.minecraft.server.packs.resources.Resource;
+                                             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/TestResourceProvider.java:6: error: package net.minecraft.server.packs.resources does not exist
+  import net.minecraft.server.packs.resources.ResourceProvider;
+                                             ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/render/model/MatLibTests.java:5: error: package net.minecraft.resources does not exist
+  import net.minecraft.resources.Identifier;
+                                ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/render/model/OBJParserTests.java:5: error: package com.mojang.blaze3d.vertex does not exist
+  import com.mojang.blaze3d.vertex.VertexFormat;
+                                  ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/render/model/OBJParserTests.java:6: error: package net.minecraft.resources does not exist
+  import net.minecraft.resources.Identifier;
+                                ^
+  /root/home/forks/mi-stack/CodeChickenLib/src/test/java/codechicken/lib/test/package-info.java:9: error: package javax.annotation does not exist
+  import javax.annotation.ParametersAreNonnullByDefault;
+                         ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to generate a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 52s
+8 actionable tasks: 6 executed, 2 up-to-date
