@@ -116,3 +116,13 @@ jar {
 javadoc {
     options.addBooleanOption("Xdoclint:none", true)
 }
+
+
+// port-26.1.2: публикация в mavenLocal (нужна потребителям, напр. BrandonsCore)
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
