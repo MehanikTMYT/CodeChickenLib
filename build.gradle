@@ -86,7 +86,12 @@ repositories {
 
 dependencies {
     // Quack dependency
-    implementation('net.covers1624:Quack:[0.4.10,0.5)')
+    jarJar(implementation('net.covers1624:Quack')) {
+        version {
+            strictly '[0.4.10,0.5)'
+            prefer '0.4.10.128'
+        }
+    }
     
     testImplementation platform('org.junit:junit-bom:6.0.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
